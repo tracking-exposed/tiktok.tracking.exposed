@@ -1,5 +1,5 @@
 ---
-title: YouTube Tracking Exposed
+title: TikTok Algortihm Observatory
 date: 2019-05-22T15:01:21+01:00
 draft: false
 layout: home

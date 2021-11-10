@@ -27,23 +27,22 @@ canonifyURLs = true
     url = "/about/"
     weight = 1
  [[menu.main]]
-    name = "How to"
-    url = "/preview/"
+    name = "Statistics"
+    url = "/stats/"
     weight = 2
 
  [[menu.featured]]
     name = "Code"
-    url = "/tutorial/1"
-    url = "https://github.com/tracking-exposed/tiktok.tracking.exposed"
-    pre = "/images/placeholder.png"
-    post = "If you click this button you'll be in an inception: the code of this very website"
-    weight = -180
- [[menu.featured]]
-    name= "Website Code"
     url = "https://github.com/tracking-exposed/tktrex"
     pre = "/images/placeholder.png"
     post = "If you click this button you'll get the public code repo"
     weight = -170
+ [[menu.featured]]
+    name= "Website Code"
+    url = "https://github.com/tracking-exposed/tiktok.tracking.exposed"
+    pre = "/images/placeholder.png"
+    post = "A link to an inception: the code of this very website"
+    weight = -180
  [[menu.featured]]
     name = "Roadmap"
     url = "/"
