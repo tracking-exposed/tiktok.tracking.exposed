@@ -1,0 +1,7 @@
+public
+.idea
+.sass-cache
+resources
+themes
+
+.infrastructure/*

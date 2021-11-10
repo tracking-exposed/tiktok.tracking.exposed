@@ -1,0 +1,61 @@
+baseURL = "/"
+languageCode = "utf-8"
+title = "TikTok Tracking Exposed"
+theme = "trex"
+enableRobotsTXT = true
+canonifyURLs = true
+
+[params]
+   ourvision = "not-display"
+   subtitle = "TikTok"
+   subsite = "tiktok"
+   openGraphSiteName = "TikTok Observatory"
+   description = ""
+   tagline = "TikTok Observatory — among all the α releases, one of the alphæst"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[permalinks]
+  posts = "/:slug/"
+
+[menu]
+ [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 1
+ [[menu.main]]
+    name = "How to"
+    url = "/preview/"
+    weight = 2
+
+ [[menu.featured]]
+    name = "Code"
+    url = "/tutorial/1"
+    url = "https://github.com/tracking-exposed/tiktok.tracking.exposed"
+    pre = "/images/placeholder.png"
+    post = "If you click this button you'll be in an inception: the code of this very website"
+    weight = -180
+ [[menu.featured]]
+    name= "Website Code"
+    url = "https://github.com/tracking-exposed/tktrex"
+    pre = "/images/placeholder.png"
+    post = "If you click this button you'll get the public code repo"
+    weight = -170
+ [[menu.featured]]
+    name = "Roadmap"
+    url = "/"
+    pre = "/images/placeholder.png"
+    weight = -160
+    post = "Nothing public yet"
+
+ [[menu.footer]]
+    name = "AI Forensics"
+    url = "https://aiforensics.org"
+    weight = 100
+ [[menu.footer]]
+    name = "Tracking Exposed"
+    url = "https://tracking.exposed"
+    weight = 90
