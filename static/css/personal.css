@@ -1,0 +1,23 @@
+.counter--entry {
+  text-align: center;
+  background-color: lightgoldenrodyellow;
+  font-family: monospace;
+  border-radius: 5px;
+}
+
+.metadata {
+  margin-top: 4px;
+  border-top: 1px solid lightblue;
+  border-left: 1px solid lightblue;
+}
+
+.html {
+  margin: 1px;
+  border: 1px solid lightgreen
+}
+
+.hashtags {
+  font-style: italic;
+  color: darkolivegreen;
+  margin-top: 5px;
+}

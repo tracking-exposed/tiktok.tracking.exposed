@@ -3,21 +3,57 @@ title: Evidence collection page
 subtitle: Do not share this link! Only you have access to it.
 date: 2021-09-10T05:01:21+01:00
 draft: false
+extraCSS: "/css/personal.css"
 type: app 
 ---
 
-<small>everything still need to be linked</small>
+<h3>Collected data from your browser extension</h3>
+<div class="row" id="counters">
+    <div class="col-4">
+        <div class="counter--entry" id="total--htmls">
+        </div>
+        Total HTML snapshot
+    </div>
+    <div class="col-4">
+        <div class="counter--entry" id="total--metadata">
+        </div>
+        metadata extracted ( <i>following, foryou</i> )
+    </div>
+    <div class="col-4">
+        <div class="counter--entry" id="total--full">
+        </div>
+        Total <b>full dump</b>
+    </div>
+</div>
+
+<hr/>
+<h3>Extracted metadata</h3>
+<div id="metadata--list"></div>
+
+<hr/>
+<h3>Last 10 html snapshots</h3>
+<div id="html--list"></div>
 
 
+<!--
 <link href="/css/c3.min.css" rel="stylesheet">
 <script src="/js/d3.min.js"></script>
 <script src="/js/c3.min.js"></script>
+-->
+
 <script src="/js/global.js"></script>
 <script src="/js/personal.js"></script>
 <script type="text/javascript">
 
-    $( document ).ready(function() {
-        loadPersonalEvidenceList();
+    $( document ).ready(async function() {
+        const t = window.location.href.split('/#').pop();
+        if(t.length !== 44 ) {
+            console.log("Wrong token length in the URL", t.length);
+            $("#counters").hide();
+            $("h3").text("Missing key in the URL!");
+            return;
+        }
+        await loadPersonalEvidenceList(t);
     });
 
 </script>
