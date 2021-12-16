@@ -59,11 +59,7 @@ canonifyURLs = true
     post = "Nothing public yet"
 
  [[menu.footer]]
-    name = "👀AI Forensics"
-    url = "https://aiforensics.org"
-    weight = 100
- [[menu.footer]]
-    name = "👀Tracking Exposed"
+    name = "Tracking Exposed"
     url = "https://tracking.exposed"
     weight = 90
  [[menu.footer]]
