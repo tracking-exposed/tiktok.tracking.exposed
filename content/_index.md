@@ -7,5 +7,10 @@ layout: home
 
 {{< tk-extension >}}
 
+<h2 class="secondary-color"><center>
+ This version is an operational prototype, and it is still a working in progress. 
+</center><h2>
 
+<!-- 
 <h2 style="font-size:6rem;text-align:center;word-break:keep-all;"><a href="https://github.com/tracking-exposed/tktrex/issues/4" target=_blank>We are working on version <code>0.2.x</code> release</a>, the operational <code>prototype</code>!</h1>
+-->
