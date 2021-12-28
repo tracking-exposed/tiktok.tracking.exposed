@@ -10,8 +10,8 @@ canonifyURLs = true
    subtitle = "TikTok"
    subsite = "tiktok"
    openGraphSiteName = "TikTok Observatory"
-   description = ""
-   tagline = "TikTok Observatory — among all the α releases, one of the alphæst"
+   description = "This is a collaborative project meant to let you take back control of your data. This approach do not follow corporate methods, but as an algorithm investigator let you passively records what Youtube algorithm pick for you, and let you play with the data."
+   tagline = "TikTok Observatory: investigating censorship and algorithmic demotion"
 
 [markup]
   [markup.goldmark]
@@ -26,37 +26,37 @@ canonifyURLs = true
     name = "About"
     url = "/about"
     weight = 1
- [[menu.main]]
-    name = "Stats"
-    url = "/stats"
-    weight = 2
- [[menu.main]]
-    name = "Research"
-    url = "/research"
-    weight = 3
- [[menu.main]]
-    name = "Services"
-    url = "/services"
-    weight = 4
+ #[[menu.main]]
+ #   name = "Stats"
+ #   url = "/stats"
+ #   weight = 2
+ #[[menu.main]]
+ #   name = "Research"
+ #   url = "/research"
+ #   weight = 3
+ #[[menu.main]]
+ #   name = "Services"
+ #   url = "/services"
+ #   weight = 4
 
  [[menu.featured]]
-    name = "Code"
+    name = "Github repository"
     url = "https://github.com/tracking-exposed/tktrex"
-    pre = "https://via.placeholder.com/276x240.png"
-    post = "If you click this button you'll get the public code repo"
-    weight = -170
+    pre = "images/github.svg"
+    post = "Contribute to the public repository, contribute to the free software"
+    weight = 1
  [[menu.featured]]
-    name= "Website Code"
-    url = "https://github.com/tracking-exposed/tiktok.tracking.exposed"
-    pre = "https://via.placeholder.com/276x240.png"
-    post = "A link to an inception: the code of this very website"
-    weight = -180
+    name= "Tracking Exposed, since 2016"
+    url = "https://tracking.exposed"
+    pre = "/images/trex-logo-180x180.jpg"
+    post = "The umbrella project, check tools and researches on Facebook, YouTube, PornHub and Amazon"
+    weight = 2
  [[menu.featured]]
-    name = "Roadmap"
-    url = "/"
-    pre = "https://via.placeholder.com/276x240.png"
-    weight = -160
-    post = "Nothing public yet"
+    name = "DMI Winter School"
+    url = "/winterschool22"
+    pre = "images/digitalmethods.svg"
+    weight = 3
+    post = "TikTok TrEx will be used during the Digital Methods Winter School at the Amsterdam University"
 
  [[menu.footer]]
     name = "Tracking Exposed"
