@@ -5,7 +5,7 @@ date: 2021-11-26
 draft: false
 ---
 
-# At the moment the tool is not for public usage.
+# At the moment the tool is not suitable for public usage
 
 ---
 
