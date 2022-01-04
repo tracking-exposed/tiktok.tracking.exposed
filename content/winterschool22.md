@@ -40,32 +40,29 @@ Building on these results, our goal is to build a world map of shadow-banning on
 **Methods, data sets, and tools:**
     
 The exploration will start from an initial list of keywords which we know to be censored in specific regions. Our goal is to generalize the detection of censorship, by identifying as many cues as possible which can be detected from the user interface.
-    
-The investigation will rely on the Tracking Exposed browser extension to record the participants' experiments and collect the resulting data in a systematic and machine-readable format by passively scraping the content displayed on the browser.
-    
+
+The investigation will rely on the Tracking Exposed browser extension to record the participants' experiments and collect the resulting data in a systematic and machine-readable format by passively scraping the content displayed on the browser.    
 In order to capture geographic differences, participants will be given access to VPNs and, when needed, residential IP addresses located in the country of interest.
-    
 The data collected will be sent to a database where all the evidence collected will be stored. These data will be analyzed, before being aggregated to build a map of the censorship on the platform.
     
-We will also reflect on the design and inplemention of a reporting interface for internauts to contribute to the reporting and evidence collection of social media censorship. The goal is also for the Winter School to pave the way for a wider crowdsourcing effort of censorship reports. For an example of this type of campaign, see the work of our partners [ooni.org](https://ooni.org/).
+We will reflect on the design and implementation of a reporting interface for internauts to contribute to the reporting and evidence collection of social media censorship. The goal is also for the Winter School to pave the way for a wider crowdsourcing effort of censorship reports. For an example of this type of campaign, see the work of our partners [ooni.org](https://ooni.org/).
     
 **Preliminary findings and/or expected outcomes:**
     
 We will provide the participants list of sample censored contents (hashtag, topic, channels, videos) and the tool to record new evidence (TikTok Tracking Exposed), to test different countries (VPNs, Residential IP) and structured evidence page where all the data collected will be stored. 
-    
 We expect to enrich the list of censored content and, in the meanwhile, improve the methodologies to detect censored content and come up with new ones. We will also design an interface which could make censorship reporting accessible to ordinary users. 
     
 The final goal is to create an interactive world map, which would, on hover, display the different hashtags and videos that are censored in a specific country. These results will inform users and regulators on the extent and scope of algorithmic censorship. 
     
-    
+<!--    
 **Relevant expertise:**
     
 All the participants are welcome to the project; In particular, the following interests or expertise would be particularly relevant:
-    
 - Knowledge or experience about content take-dows on social media in general.
 - Experience with the analysis of TikTok.
 - Knoweldge or language fluency of geopolitical contexts in which political censorship is suspected.
 - Everyone interested in this map visualization is invited to participate.
+-->
 
 **References**
     
