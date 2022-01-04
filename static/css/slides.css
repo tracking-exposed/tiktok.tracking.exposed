@@ -1,0 +1,37 @@
+.bg-standard {
+  background-color: #f7f9fb;
+}
+
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+h1 span {
+    width: 15.8rem;
+}
+
+
+.primary {
+  color: #030303;
+}
+.secondary {
+  color: #ee1d52;
+}
+.third {
+  color: #30cce0;
+}
+.fourth {
+  color: #fff;
+}
+
+.hlight {
+  fill: black;
+  font-size: 1.2em;
+  color: #0C8346;
+}
+
+.other {
+  fill: green;
+}
+ 
