@@ -1,4 +1,4 @@
-const DAYSAGO = 12;
+const DAYSAGO = 22;
 
 const clist = [{
     API: buildApiUrl('statistics/supporters/day', DAYSAGO, 2),
