@@ -11,8 +11,8 @@ const palette = [
 
 function buildApiUrl(apiName, option, apiv) {
 
-    const SERVER = 'https://tiktok.tracking.exposed';
-    // const SERVER = 'http://localhost:14000';
+    // const SERVER = 'https://tiktok.tracking.exposed';
+    const SERVER = 'http://localhost:14000';
     let rv = null;
     const api_path = apiv ? `/api/v${apiv}/` : "/api/v1/";
 
