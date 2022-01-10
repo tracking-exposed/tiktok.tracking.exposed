@@ -1,3 +1,16 @@
+#taboule-container {
+  height: 600px;
+  margin-bottom: 100px;
+}
+
+#taboule-container > div {
+  height: 100%;
+}
+
+#taboule-container > div > div {
+  height: 100%;
+}
+
 .counter--entry {
   text-align: center;
   background-color: lightgoldenrodyellow;

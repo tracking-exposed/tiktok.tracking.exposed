@@ -32,7 +32,11 @@ type: app
 
 <hr/>
 <h3>Last 10 html snapshots</h3>
-<div id="html--list"></div>
+<div id="html--list">
+    <div id="taboule-container">
+        <span>Taboule here</span>
+    </div>
+</div>
 
 
 <!--
@@ -53,14 +57,15 @@ type: app
     $("h3").text("Missing key in the URL!");
   }
   else {
+
     const baseURL = (window.location.origin.match(/localhost/)) ?
         'http://localhost:14000/api' : "/api";
 
     window.Taboule({
         showInput: true,
-        node: document.getElementById('html--list'),
+        node: document.getElementById('taboule-container'),
         baseURL,
-        query: "tikTokPersonalHTMLSummary",
+        query: "tikTokSearches",
         pageSize: 25,
         initialParams: {
             publicKey: t,
