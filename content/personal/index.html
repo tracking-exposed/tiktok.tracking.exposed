@@ -27,15 +27,14 @@ type: app
 </div>
 
 <hr/>
-<h3>Extracted metadata</h3>
-<div id="metadata--list" class="taboule-container"></div>
-
-<hr/>
-<h3>Last 10 html snapshots</h3>
-<div id="html--list" class="taboule-container">
+<h3>Search queries</h3>
+<div id="searches--list" class="taboule-container">
     <span>Taboule here</span>
 </div>
 
+<hr/>
+<h3>Other recorded activities</h3>
+<div id="metadata--list" class="taboule-container"></div>
 
 <!--
 <link href="/css/c3.min.css" rel="stylesheet">
@@ -72,7 +71,7 @@ type: app
 
     window.Taboule({
         showInput: true,
-        node: document.getElementById('html--list'),
+        node: document.getElementById('searches--list'),
         baseURL,
         query: "tikTokSearches",
         pageSize: 25,
