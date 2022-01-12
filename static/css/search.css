@@ -1,0 +1,28 @@
+
+#subject {
+  background-color: lightgrey;
+  padding: 4px;
+  border: 2px solid lightslategray;
+  border-radius: 5px;
+}
+
+#csv {
+  background-color: lightgrey;
+  border: 2px solid lightpink;
+  padding: 4px;
+  border-radius: 5px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+#repeat {
+  font-family: monospace;
+  margin-left: 30px;
+  cursor: alias;
+}
+
+.hashtags {
+  font-style: italic;
+  color: darkolivegreen;
+  margin-top: 5px;
+}
