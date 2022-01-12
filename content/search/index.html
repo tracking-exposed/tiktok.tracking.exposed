@@ -10,16 +10,16 @@ type: app
 <div id="initially--hidden" hidden>
 
 <h3>
-  Consulting search query of: 
+  <a href="/queries">⬅</a> Consulting search query of: 
   <span id="subject"></span>
   <a id="repeat" target=_blank>repeat on tiktok</a>
   <a id="csv">CSV</a>
 </h3>
 
 <hr/>
+</div>
 <div id="evidence--list"></div>
 
-</div>
 
 <!--
 <link href="/css/c3.min.css" rel="stylesheet">
@@ -33,15 +33,17 @@ type: app
 
   $(document).ready(async function() {
     const term = window.location.hash.substr(1);
-    console.log(term);
     const url = buildApiUrl('query', term + '/json', 2);
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
-    if(!data.length)
+    if(!data.length) {
+        $("#evidence--list")
+          .html('<span class="error">Error: no data found matching this query</span>')
         return;
+    }
     $("#initially--hidden").removeAttr('hidden');
-    $("#subject").text(term);
+    $("#subject").text(decodeURI(term));
     $("#repeat").attr('href', 'https://www.tiktok.com/search?q=' + term);
     $("#csv").on('click', function() {
         const csvurl = buildApiUrl('query', term + '/csv', 2);

@@ -39,3 +39,20 @@
   background-color: #fef3f5;
   margin-bottom: 10px;
 }
+
+ol,ul {
+  font-size: 1.4rem;
+}
+
+.qlist {
+  margin-right: 10px;
+  background-color: darkslategray;
+  padding: 5px;
+}
+
+.error {
+  font-family: monospace;
+  background-color: lightgray;
+  color: red;
+  font-size: 3em;
+}

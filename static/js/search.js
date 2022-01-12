@@ -15,7 +15,6 @@ function produceSearchEntry(o) {
   */
   const fileBaseUrl = window.location.host === 'localhost:1313' ?
     'http://localhost:14000/' : '/';
-  console.log(window.location.host, fileBaseUrl);
   return `<div class="search-row row">
     <div class="col-8">
       <b>From</b>: <a href="https://www.tiktok.com/${o.authorId}">${o.authorId}</a>
@@ -31,7 +30,9 @@ function produceSearchEntry(o) {
       <span class="hashtags">${o.tags}</span>
     </div>
     <div class="col-4">
-      <img height=400 src="${fileBaseUrl}api/v0/images/${o.thumbfile.substr(0,2)}/${o.thumbfile}" />
+      <a href="https://www.tiktok.com/${o.authorId}/video/${o.videoId}" target=_blank>
+        <img height=400 src="${fileBaseUrl}api/v0/images/${o.thumbfile.substr(0,2)}/${o.thumbfile}" />
+      </a>
     </div> 
   </div>`;
 }
