@@ -26,3 +26,16 @@
   color: darkolivegreen;
   margin-top: 5px;
 }
+
+.order {
+  background-color: black;
+  color: white;
+  border-radius: 2px;
+  font-family: monospace;
+  padding: 3px;
+}
+
+.search-row {
+  background-color: #fef3f5;
+  margin-bottom: 10px;
+}

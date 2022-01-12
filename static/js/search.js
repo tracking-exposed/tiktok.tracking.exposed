@@ -1,34 +1,3 @@
-function produceMetainfo(metadata) {
-  return _.map(metadata, function(m) {
-    if(!m.hashtags)
-      m.hashtags = [];
-    return `<div class="metadata row">
-      <div class="col-2">
-        <b>From</b>: ${m.author.name}
-        <br>
-        <b>Link</b>: <a href="https://www.tiktok.com${m.author.link}" target=_blank>${m.author.username}</a>
-        <br>
-        <i>${m.relative} ago</i>
-      </div>
-      <div class="col-5">
-        ${m.description}
-        <br>
-        <br>
-        <span class="hashtags">${m.hashtags.join(" ")}</span>
-      </div>
-      <div class="col-5">
-        🎵 <a href="https://www.tiktok.com${m.music.url}" target=_blank>${m.music.name}</a>
-        <br>
-        👍 <span class="likes">${m.metrics.liken}</span>
-        <br>
-        💬 <span class="comments">${m.metrics.commentn}</span>
-        <br>
-        ⇗ <span class="comments">${m.metrics.sharen}</span>
-      </div>
-    </div>`;
-  }).join("\n");
-}
-
 function produceSearchEntry(o) {
   /* o is:
     authorId: "@monismurf"
@@ -37,15 +6,34 @@ function produceSearchEntry(o) {
     publicKey: "D7s1375WKRJhCdjFnBBvJ7psBtSeFYkTr9xc5GAhcub1"
     query: "smurf"
     savingTime: "2022-01-11T03:45:38.858Z"
+    publishingDate: "2022-01-01T00:00:00.000Z"
     tags: ""
     textdesc: "pues nos quedaremos con la version chill porque tt nos borra la del culillo"
     thumbfile: "828c66fb3e4a4780a5cb95944a004423_1624113842.jpeg"
     type: "video"
     videoId: "6975515801751194886"
   */
-  return `<pre>
-    ${JSON.stringify(o)}
-  </pre>`;
+  const fileBaseUrl = window.location.host === 'localhost:1313' ?
+    'http://localhost:14000/' : '/';
+  console.log(window.location.host, fileBaseUrl);
+  return `<div class="search-row row">
+    <div class="col-8">
+      <b>From</b>: <a href="https://www.tiktok.com/${o.authorId}">${o.authorId}</a>
+      <br>
+      <b>Collected</b>: <i>${o.savingTime}</i>
+      <br>
+      <b>Published</b>: <i>${o.publishingDate}</i>
+      <br>
+      <small>
+        <span class="order">${o.order}</span> <span class="text">${o.textdesc}</span>
+      </small>
+      <br>
+      <span class="hashtags">${o.tags}</span>
+    </div>
+    <div class="col-4">
+      <img height=400 src="${fileBaseUrl}api/v0/images/${o.thumbfile.substr(0,2)}/${o.thumbfile}" />
+    </div> 
+  </div>`;
 }
 
 /* embedded tiktok videos
