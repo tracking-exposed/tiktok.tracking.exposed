@@ -1,0 +1,57 @@
+---
+title: Query comparison page
+subtitle: Every search query collected by tiktok.tracking.exposed goes here
+date: 2021-09-10T05:01:21+01:00
+draft: false
+extraCSS: "/css/search.css"
+type: app 
+---
+
+<div id="initially--hidden" hidden>
+
+<h3>
+  <a href="/queries">⬅</a> Consulting search query of: 
+  <span id="subject"></span>
+  <a id="repeat" target=_blank>repeat on tiktok</a>
+  <a id="csv">CSV</a>
+</h3>
+
+<hr/>
+</div>
+<div id="evidence--list"></div>
+
+
+<!--
+<link href="/css/c3.min.css" rel="stylesheet">
+<script src="/js/d3.min.js"></script>
+<script src="/js/c3.min.js"></script>
+-->
+
+<script type="text/javascript" src="/js/global.js"></script>
+<script type="text/javascript" src="/js/search.js"></script>
+<script type="text/javascript">
+
+  $(document).ready(async function() {
+    const term = window.location.hash.substr(1);
+    const url = buildApiUrl('query', term + '/json', 2);
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+    if(!data.length) {
+        $("#evidence--list")
+          .html('<span class="error">Error: no data found matching this query</span>')
+        return;
+    }
+    $("#initially--hidden").removeAttr('hidden');
+    $("#subject").text(decodeURI(term));
+    $("#repeat").attr('href', 'https://www.tiktok.com/search?q=' + term);
+    $("#csv").on('click', function() {
+        const csvurl = buildApiUrl('query', term + '/csv', 2);
+        window.location = csvurl;
+    })
+    const html = _.map(data, produceSearchEntry).join('\n');
+    $("#evidence--list").html(html);
+
+  });
+
+</script>

@@ -7,7 +7,8 @@ layout: home
 
 {{< tk-extension >}}
 
-<h2 class="secondary-color text-center">
- This version is an operational prototype, works, but with major issues.
-<h2>
+---
+### Try the experiment Query list & comparison
 
+* Search among the [Query list](/queries)
+* How looks like [Happyness](/search/#happyness)
