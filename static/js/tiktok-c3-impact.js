@@ -12,36 +12,11 @@ const clist = [{
             'newcomers': 'y'
         },
         colors: {
-            'newcomers': _.first(palette)
+            'newcomers': TTBLACK,
         },
         labels: { show: true },
     },
     legend: { show: false },
-    axis: {
-        x: {
-            type: 'timeseries',
-            tick: {
-                format: '%Y-%m-%d',
-            },
-        }
-    }
-}, {
-    API: buildApiUrl('statistics/htmls/day', DAYSAGO, 2),
-    bindto: '#htmls-graph',
-    data : {
-        mimeType: 'json',
-        xFormat: '%Y-%m-%dT%H:%M:%S.000Z',
-        keys: { value : [ 'total' ], x: 'day' },
-        type: 'bar',
-        axes: {
-            'total': 'y',
-        },
-        colors: {
-            'total': palette[3],
-        },
-        labels: { show: true },
-    },
-    legend: { show: true },
     axis: {
         x: {
             type: 'timeseries',
@@ -62,7 +37,7 @@ const clist = [{
             'active': 'y'
         },
         colors: {
-            'active': _.last(palette)
+            'active': TTRED,
         },
         labels: { show: true },
     },
@@ -76,18 +51,74 @@ const clist = [{
         }
     }
 }, {
-    API: buildApiUrl('statistics/metadata/day', DAYSAGO, 2),
-    bindto: '#metadata-graph',
+    API: buildApiUrl('statistics/feeds/day', DAYSAGO, 2),
+    bindto: '#feeds-graph',
     data : {
         mimeType: 'json',
         xFormat: '%Y-%m-%dT%H:%M:%S.000Z',
-        keys: { value : [ 'total' ], x: 'day' },
-        types: {
-            'total': 'bar',
+        keys: { value : [
+            "total", "foryou", "following", "creator", "leftover", ],
+            x: 'day'
         },
+        type: 'bar',
         colors: {
-            'total': palette[0],
+            "total": TTBLACK,
+            "foryou": TTRED,
+            "following": TTBLUE,
+            "creator": ICBLUISH,
+            "leftover": ICREDDISH
         },
+        groups: [
+            [ "foryou", "following", "creator" ]
+        ]
+    },
+    axis: {
+        x: {
+            type: 'timeseries',
+            tick: {
+                format: '%Y-%m-%d',
+            },
+        }
+    }
+}, {
+    API: buildApiUrl('statistics/search/day', DAYSAGO, 2),
+    bindto: '#search-graph',
+    data : {
+        mimeType: 'json',
+        xFormat: '%Y-%m-%dT%H:%M:%S.000Z',
+        keys: {
+            value : [ "search", "rejected" ],
+            x: 'day'
+        },
+        type: 'bar',
+        colors: {
+            "search": TTRED,
+            "rejected": TTBLUE,
+        },
+        labels: { show: true },
+    },
+    axis: {
+        x: {
+            type: 'timeseries',
+            tick: {
+                format: '%Y-%m-%d',
+            },
+        }
+    }
+}, {
+    API: buildApiUrl('statistics/processing/day', DAYSAGO, 2),
+    bindto: '#processing-graph',
+    data : {
+        mimeType: 'json',
+        xFormat: '%Y-%m-%dT%H:%M:%S.000Z',
+        keys: { value : [ 'total', 'successful', 'failure'], x: 'day' },
+        type: 'bar',
+        colors: {
+            'total': TTBLACK,
+            'successful': TTBLUE,
+            'failure': TTRED, 
+        },
+        labels: { show: true },
     },
     axis: {
         x: {

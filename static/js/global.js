@@ -9,6 +9,12 @@ const palette = [
     /* Crayola's Red */
     "#ee1d52" ];
 
+const TTBLACK = "#010101";
+const TTBLUE = "#69c9d0";
+const TTRED = "#ee1d52";
+const ICBLUISH = "#766ce9";
+const ICREDDISH = "#e35187";
+
 function buildApiUrl(apiName, option, apiv) {
 
     // const SERVER = 'https://tiktok.tracking.exposed';
