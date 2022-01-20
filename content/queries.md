@@ -8,13 +8,17 @@ extraCSS: "/css/search.css"
 
 # 🔎 Search Query List
 
-<div id="evidence--list"></div>
+<ol id="evidence--list"></ol>
+
+---
+
+# 🤔 How to appear here?
 
 * If you install the browser extension ([version > 0.2.5](https://github.com/tracking-exposed/yttrex/issues/289)) your search queries would be comparable among other people that perform the same.
 * To enter the list above, we only the search query that:
   1) Got actual video as answer from TikTok (no errors, for example, on Guideline Community Violations).
-  2) Got at least two different browser performing it.
-  3) Have been performed in the last 7 days.
+  2) At least two different browser peformed the same query.
+  3) Is at max 7 days old.
 
 <script type="text/javascript" src="/js/global.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
@@ -29,7 +33,11 @@ extraCSS: "/css/search.css"
         return;
     }
     const html = _.map(data, function(query) {
-      return `<a class="qlist" href="/search#${query}">${query}</a>`;
+      return `
+        <li>
+          <a class="qlist" href="/search#${query}">${query}</a>
+        </li>
+      `;
     }).join("\n");
     $("#evidence--list").html(html);
   });

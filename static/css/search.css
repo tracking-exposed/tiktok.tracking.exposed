@@ -45,9 +45,9 @@ ol,ul {
 }
 
 .qlist {
-  margin-right: 10px;
-  background-color: darkslategray;
-  padding: 5px;
+  border-radius: 5px;
+  padding: 0px 3px 0px 3px;
+  background-color: rgb(0, 32, 32);
 }
 
 .error {

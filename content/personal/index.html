@@ -29,13 +29,11 @@ type: app
 </div>
 -->
 
-<hr/>
-<div class="row" id="counters">
-  <div class="col-6">
+<div class="row">
+  <div class="col-3">
+  Download CSV format
+  <hr/>
   <h3>
-    <span class="feed--name">
-        For You
-    </span> feed, CSV
     <button id="foryou--csv" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" title="Download CSV">
     <span class="MuiIconButton-label">
         <svg class="MuiSvgIcon-root MuiSvgIcon-colorError" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
@@ -46,13 +44,12 @@ type: app
     </span>
     <span class="MuiTouchRipple-root"></span>
     </button>
-  </h3></div>
-
-  <div class="col-6">
-  <h3>
     <span class="feed--name">
-        Following
-    </span> feed, CSV
+        For You
+    </span>
+  </h3>
+
+  <h3>
     <button id="following--csv" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" title="Download CSV">
     <span class="MuiIconButton-label">
         <svg class="MuiSvgIcon-root MuiSvgIcon-colorError" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
@@ -62,8 +59,23 @@ type: app
         </svg>
     </span>
     <span class="MuiTouchRipple-root"></span>
-    </button>
-  </h3></div>
+    </button> 
+    <span class="feed--name">
+        Following
+    </span>
+  </h3>
+  </div>
+
+  <div class="col-9">
+    Technical specs for data analysis
+    <hr/>
+    CSV <a href="/csv">Documentation</a>.
+    <br>
+    "For You" JSON <code id="foryou--json"></code>
+    <br>
+    "Following" JSON <code id="following--json"></code>
+  </div>
+
 </div>
 
 <hr/>
@@ -105,27 +117,22 @@ type: app
         const csvurl = buildApiUrl('personal', t + '/following/csv', 2);
         window.location = csvurl;
     });
+    $("#following--json").text(
+        buildApiUrl('personal', t + '/following/json', 2)
+    );
+    $("#foryou--json").text(
+        buildApiUrl('personal', t + '/foryou/json', 2)
+    );
 
     const baseURL = (window.location.origin.match(/localhost/)) ?
         'http://localhost:14000/api' : "/api";
 
-    /*
+    console.log("Loading Taboule with URL", baseURL);
     window.Taboule({
-        showInput: true,
-        node: document.getElementById('metadata--list'),
-        baseURL,
-        query: "tikTokPersonalMetadataSummary",
-        pageSize: 25,
-        initialParams: {
-            publicKey: t,
-        },
-    }); */
-
-    window.Taboule({
-        showInput: true,
+        showInput: false,
         node: document.getElementById('searches--list'),
         baseURL,
-        query: "tikTokSearches",
+        query: "tikTokPersonalSearch",
         pageSize: 25,
         initialParams: {
             publicKey: t,

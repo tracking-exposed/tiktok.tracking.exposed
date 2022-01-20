@@ -40,23 +40,23 @@ canonifyURLs = true
  #   weight = 4
 
  [[menu.featured]]
-    name = "Github repository"
+    name = "Git repository"
     url = "https://github.com/tracking-exposed/tktrex"
     pre = "/images/github.svg"
-    post = "Check our the source code, it is free softward"
+    post = "backend, parser, scraping extension, website — all AGPL-3 licensed"
     weight = 1
  [[menu.featured]]
-    name= "Tracking Exposed, since 2016"
-    url = "https://tracking.exposed"
-    pre = "/images/trex-logo-180x180.jpg"
-    post = "The umbrella project, check tools and researches on Facebook, YouTube, PornHub and Amazon"
+    name= "Documentation"
+    url = "/csv"
+    pre = "/images/csv.png"
+    post = "Which metadata can you extract from TikTok, and few tips on how you can use it as data analyst"
     weight = 2
  [[menu.featured]]
     name = "DMI Winter School"
     url = "/winterschool22"
     pre = "images/digitalmethods.svg"
     weight = 3
-    post = "TikTok TRex will be used during the Digital Methods Winter School at the Amsterdam University"
+    post = "The research sprint that used this tool in development; part of Digital Methods Initiative at UvA"
 
  [[menu.footer]]
     name = "Tracking Exposed"
