@@ -2,13 +2,18 @@
   background-color: #f7f9fb;
 }
 
+/* this special class is meant to have the SVG full height */
+.slide-full {
+  padding-top: 0px !important;
+}
 
 h1 {
-    font-weight: bold;
-    text-align: center;
+  font-weight: bold;
+  text-align: center;
 }
+
 h1 span {
-    width: 15.8rem;
+  width: 15.8rem;
 }
 
 
@@ -34,4 +39,3 @@ h1 span {
 .other {
   fill: green;
 }
- 

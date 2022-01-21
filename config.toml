@@ -53,8 +53,8 @@ canonifyURLs = true
     weight = 2
  [[menu.featured]]
     name = "DMI Winter School"
-    url = "/winterschool22"
-    pre = "images/digitalmethods.svg"
+    url = "/slides/ws22-pitch"
+    pre = "/images/digitalmethods.svg"
     weight = 3
     post = "The research sprint that used this tool in development; part of Digital Methods Initiative at UvA"
 
