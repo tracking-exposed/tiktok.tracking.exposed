@@ -46,23 +46,23 @@ canonifyURLs = true
     post = "backend, parser, scraping extension, website — all AGPL-3 licensed"
     weight = 1
  [[menu.featured]]
-    name= "Documentation"
+    name= "Data Format and Tools"
     url = "/csv"
     pre = "/images/csv.png"
     post = "Which metadata can you extract from TikTok, and few tips on how you can use it as data analyst"
     weight = 2
  [[menu.featured]]
-    name = "DMI Winter School"
+    name = "on Geo-Banning"
     url = "/ws22-shadowban-research"
-    pre = "/images/digitalmethods.svg"
+    pre = "/images/imageglitcher-oflo.png"
     weight = 3
-    post = "The research sprint that used this tool in development; part of Digital Methods Initiative at UvA"
+    post = "the DMI research sprint, in January'22 has explored geobanning via search keywords"
 
  [[menu.footer]]
-    name = "Tracking Exposed"
-    url = "https://tracking.exposed"
+    name = "No, there are not Cookies!"
+    url = "/cookies"
     weight = 90
  [[menu.footer]]
-    name = "Privacy"
+    name = "Privacy Statement"
     url = "/privacy"
     weight = 80

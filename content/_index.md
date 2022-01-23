@@ -3,9 +3,10 @@ title: TikTok Algortihm Observatory
 date: 2021-11-22T15:01:21+01:00
 draft: false
 layout: home
+extraCSS: "/css/tiktok.css"
 ---
 
-{{< tk-extension >}}
+{{< tk-extension-2 version="0.2.6" >}}
 
 ---
 ### Try the experiment Query list & comparison
