@@ -1,27 +1,28 @@
 ---
-title: About TikTok TRex
-subtitle: Hunting algorithmic discrimination and measuring its impact
-date: 2021-11-02
+title: Know more about TikTok Tracking Exposed
+subtitle: — Hunting algorithmic discrimination and measuring its impact —
+date: 2022-01-22
+extraCSS: "/css/informative.css"
 draft: false
 ---
 
-# Why ? 
+### on Tiktok Algorithm analysis 
 
-We strongly expects **algorithmic content curation**, as form of power and control, would be used and **abused** in many ways by multiple actors.
-**We concentrate** in developing technology to enable healthy discussion and skeptic analysis.
-**We commit** in transferring the centralization power to the border of the network.
+Algorithm analysis is a mixture of data collection tools, a methodology, and a proper research question. We would never decode the TikTok algorithm, but for us a success looke like a **more informed debate on algorithms, on its impact, dynamics, and power.**
 
----
+### on Shadowban
 
-# What ?
+Still, in 2022 it is unclear what shadowban is, as every platform implements its version of this subtle form of censorship punishment, and they justify it as part of their business interest. Therefore, **we develop free software tools and methodology to unveil the rightful question of power the presence of this tool should raise.**
 
-tiktok.tracking.exposed takes its inspiration, methods, experience, and code from [youtube.tracking.exposed](https://youtube.tracking.exposed). This project is motivated by and refers to the [tracking.exposed](https://tracking.exposed) manifesto; the goal is to create [free (libre) software](https://github.com/tracking-exposed/yttrex), support a community of analysts and developers, and enable critical analysis of monopolist platforms. This website is on Hugo and mods can be pull-requested on this [repository](https://github.com/tracking-exposed/tiktok.tracking.exposed).
+### And about us?
 
----
+We are the [tracking.exposed team](https://tracking.exposed/about): **we want people in control of their algorithm**; the road is long, raising awareness enabling the most independent and distributed form of platform accountability is our current goal.
 
-## Get in touch !
+### Contacts
 
-* We are on twitter [@trackingexposed](https://twitter.com/trackingexposed).
-* Drop an email to _info_ @ _tracking_ . _exposed_
+Check out our twitter [@trackingexposed](https://twitter.com/trackingexposed), or drop an email to _info_ @ _tracking_ . _exposed_
 
-<!-- not working asked G. ? in the Fediverse [@trex@nebbia.fail](https://nebbia.fail/@TRackingEXposed). -->
+### Bonus track — unlinked pages
+
+1. Our consulting [services](/services).
+2. TikTok list of recent comparable search [queries](/queries).

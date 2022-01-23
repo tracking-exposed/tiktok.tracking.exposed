@@ -40,10 +40,10 @@ canonifyURLs = true
  #   weight = 4
 
  [[menu.featured]]
-    name = "Git repository"
-    url = "https://github.com/tracking-exposed/tktrex"
+    name = "Build your own tktrex"
+    url = "/software"
     pre = "/images/github.svg"
-    post = "backend, parser, scraping extension, website — all AGPL-3 licensed"
+    post = "Backend, parser, scraping extension, website — all AGPL-3 licensed"
     weight = 1
  [[menu.featured]]
     name= "Data Format and Tools"

@@ -6,8 +6,7 @@ draft: false
 extraCSS: "/css/informative.css"
 ---
 
-
-##### 22 January 2022
+##### Last update — 22 January 2022
 
 _By installing the browser extension and enabling the opt-in, you are accepting the "Data Donation Agreement," hereby drafted:_
 

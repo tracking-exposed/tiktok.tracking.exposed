@@ -6,7 +6,7 @@ draft: false
 extraCSS: "/css/informative.css"
 ---
 
-##### 22 January 2022
+##### Last update — 22 January 2022
 
 ###### This website does not use cookies or trackers; it simply serves information.
 

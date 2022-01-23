@@ -1,7 +1,7 @@
 /* h1 is reserved for the title */
 
 h2 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
 }
 
 h3 {
@@ -10,9 +10,7 @@ h3 {
     font-size: 1.7rem;
 }
 
-h4 {
-    /* still not allocated */
-}
+/* h4 still not allocated */
 
 h5 {
     text-align: center;
@@ -29,5 +27,11 @@ h6 {
 
 p {
     margin: 20px 0px 20px 0px;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 }
+
+ol {
+    font-size: 1.4rem;
+}
+
+/* I'm not overriding li and ul because they are used in the footer */

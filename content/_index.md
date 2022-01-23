@@ -6,10 +6,6 @@ layout: home
 extraCSS: "/css/tiktok.css"
 ---
 
-{{< tk-extension-2 version="0.2.6" >}}
+{{< tk-extension-2 version="0.2.7" >}}
 
 ---
-### Try the experiment Query list & comparison
-
-* Search among the [Query list](/queries)
-* How looks like [Happyness](/search/#happyness)
