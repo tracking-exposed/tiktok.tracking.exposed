@@ -14,11 +14,13 @@ extraCSS: "/css/search.css"
 
 # 🤔 How to appear here?
 
-* If you install the browser extension ([version > 0.2.5](https://github.com/tracking-exposed/yttrex/issues/289)) your search queries would be comparable among other people that perform the same.
+* The browser extension needs to be installed, then your search results would be collected and sent to the server.
 * To enter the list above, we only the search query that:
   1) Got actual video as answer from TikTok (no errors, for example, on Guideline Community Violations).
   2) At least two different browser peformed the same query.
   3) Is at max 7 days old.
+
+{{<tk-extension-2 version="0.2.7">}}
 
 <script type="text/javascript" src="/js/global.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>
