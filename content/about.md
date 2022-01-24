@@ -22,7 +22,11 @@ We are the [tracking.exposed team](https://tracking.exposed/about): **we want pe
 
 Check out our twitter [@trackingexposed](https://twitter.com/trackingexposed), or drop an email to _info_ @ _tracking_ . _exposed_
 
-### Bonus track — unlinked pages
+### Bonus track — the other pages — and a few are not even linked!
 
 1. Our consulting [services](/services).
 2. TikTok list of recent comparable search [queries](/queries).
+3. [Privacy](/privacy) did you read why **Data Donation** matters?
+4. We don't use [Cookies](/cookies) so let's brag about it
+5. This is how all the search results about [Happyness](https://tiktok.tracking.exposed/search/#happyness) looks like. If you are logged on TikTok [Repeat the query](https://www.tiktok.com/search?q=happyness)
+6. the algorithm TikTok [Commentary](/commentary) on TikTok!
