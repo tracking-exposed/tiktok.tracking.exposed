@@ -9,17 +9,26 @@ type: app
 
 <div id="initially--hidden" hidden>
 
-<h3>
-  <a href="/queries">⬅</a> Consulting search query of: 
-  <span id="subject"></span>
-  <a id="repeat" target=_blank>repeat on tiktok</a>
-  <a id="csv">CSV</a>
-</h3>
+  <div class="row">
+    <div class="col-3 monospace">
+      <a title="back to query list" href="/queries">⬅️</a>
+      Search results for:
+    </div>
+    <div class="col-5 monospace" id="subject">
+    </div>
+    <div class="col-3 text-right monospace">
+      <a id="repeat" target=_blank>repeat on tiktok</a>
+    </div>
+    <div class="col-1 monospace">
+      <a id="csv">⬇️CSV</a>
+    </div>
+  </div>
 
-<hr/>
+  <hr/>
+
 </div>
-<div id="evidence--list"></div>
 
+<div id="evidence--list"></div>
 
 <!--
 <link href="/css/c3.min.css" rel="stylesheet">

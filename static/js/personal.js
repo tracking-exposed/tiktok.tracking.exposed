@@ -45,7 +45,7 @@ function produceHtmlinfo(htmls) {
    #total--full         counter
 
    #html--list          element list
-   #metadata--list      element list                        */
+   #metadata--list      element list            */
 
 async function loadPersonalEvidenceList(pubKey) {
 

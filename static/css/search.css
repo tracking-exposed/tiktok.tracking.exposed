@@ -1,9 +1,10 @@
 
 #subject {
-  background-color: lightgrey;
-  padding: 4px;
-  border: 2px solid lightslategray;
-  border-radius: 5px;
+  background-color: rgb(243, 243, 243);
+  border-radius: 2px;
+  text-align: center;
+  border-top: 2px solid lightslategray;
+  border-bottom: 2px solid lightslategray;
 }
 
 #csv {
@@ -15,9 +16,11 @@
   cursor: pointer;
 }
 
-#repeat {
+.monospace {
   font-family: monospace;
-  margin-left: 30px;
+}
+
+#repeat {
   cursor: alias;
 }
 
