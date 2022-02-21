@@ -1,0 +1,14 @@
+
+.tiktok {
+    /* remind self: produced with https://glitchart.io/ */
+    background-image: url("/images/glitch-art-bg-2.jpg");
+}
+
+.core {
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+p {
+    font-size: 1.4em;
+}
