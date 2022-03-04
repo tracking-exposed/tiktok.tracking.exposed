@@ -26,14 +26,20 @@ extraCSS: "/css/search.css"
 <script type="text/javascript" src="/js/search.js"></script>
 <script type="text/javascript">
   $(document).ready(async function() {
-    const url = buildApiUrl('queries', 'list', 2);
+    const url = buildApiUrl('public/queries', 'list', 2);
     const response = await fetch(url);
-    const data = await response.json();
-    console.log(data);
+    let data = null;
+    try {
+      data = await response.json();
+    } catch(error) {
+      $("#evidence--list").html('<span class="error">Error: '+error+'</span>')
+      return;
+    }
     if(!data.length) {
         $("#evidence--list").html('<span class="error">Error: no search query found?</span>')
         return;
     }
+    console.log(data);
     const html = _.map(data, function(query) {
       return `
         <li>

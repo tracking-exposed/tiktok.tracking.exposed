@@ -42,7 +42,7 @@ type: app
 
   $(document).ready(async function() {
     const term = window.location.hash.substr(1);
-    const url = buildApiUrl('query', term + '/json', 2);
+    const url = buildApiUrl('public/query', term + '/json', 2);
     const response = await fetch(url);
     const data = await response.json();
     console.log(data);
@@ -55,7 +55,7 @@ type: app
     $("#subject").text(decodeURI(term));
     $("#repeat").attr('href', 'https://www.tiktok.com/search?q=' + term);
     $("#csv").on('click', function() {
-        const csvurl = buildApiUrl('query', term + '/csv', 2);
+        const csvurl = buildApiUrl('public/query', term + '/csv', 2);
         window.location = csvurl;
     })
     const html = _.map(data, produceSearchEntry).join('\n');
