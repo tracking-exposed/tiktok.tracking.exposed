@@ -15,8 +15,17 @@ function produceSearchEntry(o) {
   */
   const fileBaseUrl = window.location.host === 'localhost:1313' ?
     'http://localhost:14000/' : '/';
+  const path = o.thumbfile ?
+    `${fileBaseUrl}api/v0/images/${o.thumbfile.substr(0,2)}/${o.thumbfile}` :
+    null;
+  const img = path ?
+    `<img height=400 src="${path}" />` :
+    "<h3>🖼️ Image not available.</h3>";
+
   return `<div class="search-row row">
     <div class="col-8">
+      <span class="order">${o.order}</span>
+      <br>
       <b>From</b>: <a href="https://www.tiktok.com/${o.authorId}">${o.authorId}</a>
       <br>
       <b>Collected</b>: <i>${o.savingTime}</i>
@@ -24,19 +33,16 @@ function produceSearchEntry(o) {
       <b>Published</b>: <i>${o.publishingDate}</i>
       <br>
       <small>
-        <span class="order">${o.order}</span> <span class="text">${o.textdesc}</span>
+	<b>Description</b>: <span class="text">${o.textdesc}</span>
       </small>
+      <br>
       <br>
       <span class="hashtags">${o.tags}</span>
     </div>
     <div class="col-4">
       <a href="https://www.tiktok.com/${o.authorId}/video/${o.videoId}" target=_blank>
-        <img height=400 src="${fileBaseUrl}api/v0/images/${o.thumbfile.substr(0,2)}/${o.thumbfile}" />
+        ${img}
       </a>
     </div> 
   </div>`;
 }
-
-/* embedded tiktok videos
-<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@astrobiolena/video/7015015607665970438" data-video-id="7015015607665970438" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@astrobiolena" href="https://www.tiktok.com/@astrobiolena">@astrobiolena</a> What is trajectory biasing? <a title="science" target="_blank" href="https://www.tiktok.com/tag/science">#science</a> <a title="astronomy" target="_blank" href="https://www.tiktok.com/tag/astronomy">#astronomy</a> <a title="space" target="_blank" href="https://www.tiktok.com/tag/space">#space</a> <a title="mars" target="_blank" href="https://www.tiktok.com/tag/mars">#mars</a> <a title="astrobiology" target="_blank" href="https://www.tiktok.com/tag/astrobiology">#astrobiology</a> <a title="sciencetok" target="_blank" href="https://www.tiktok.com/tag/sciencetok">#sciencetok</a> <a title="learnontiktok" target="_blank" href="https://www.tiktok.com/tag/learnontiktok">#learnontiktok</a> <a title="spacethings" target="_blank" href="https://www.tiktok.com/tag/spacethings">#spacethings</a> <a target="_blank" title="♬ Jazz - Aylior" href="https://www.tiktok.com/music/Jazz-6732544207392606209">♬ Jazz - Aylior</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
- */

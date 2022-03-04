@@ -33,6 +33,7 @@
 .order {
   background-color: black;
   color: white;
+  font-size: 1.1em;
   border-radius: 2px;
   font-family: monospace;
   padding: 3px;
