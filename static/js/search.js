@@ -21,21 +21,22 @@ function produceSearchEntry(o) {
   const img = path ?
     `<img height=400 src="${path}" />` :
     "<h3>🖼️ Image not available.</h3>";
+  const publicationInfo = o.publishingDate ?
+    `<b>Published</b>: <i>${o.publishingDate}</i><br>` : "";
 
-  return `<div class="search-row row">
+  return `<div class="search-row row ${o.pseudo}">
     <div class="col-8">
       <span class="order">${o.order}</span>
       <br>
-      <b>From</b>: <a href="https://www.tiktok.com/${o.authorId}">${o.authorId}</a>
+      <b>Producer</b>: <a href="https://www.tiktok.com/${o.authorId}">${o.authorId}</a>
       <br>
-      <b>Collected</b>: <i>${o.savingTime}</i>
+      <b>Collected by</b>: <i>${o.pseudo}</i>
       <br>
-      <b>Published</b>: <i>${o.publishingDate}</i>
+      <b>Collected on</b>: <i>${o.savingTime}</i> (<b>${o.timeago}</b>)
       <br>
-      <small>
-	<b>Description</b>: <span class="text">${o.textdesc}</span>
-      </small>
+      <b>Description</b>: <span class="text">${o.textdesc}</span>
       <br>
+      ${publicationInfo}
       <br>
       <span class="hashtags">${o.tags}</span>
     </div>
