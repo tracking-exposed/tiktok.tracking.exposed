@@ -47,7 +47,7 @@ canonifyURLs = true
     weight = 1
  [[menu.featured]]
     name= "Data Format and Tools"
-    url = "/csv"
+    url = "/docs/tktrex/api"
     pre = "/images/csv.png"
     post = "Which metadata can you extract from TikTok, and few tips on how you can use it as data analyst"
     weight = 2
