@@ -20,7 +20,7 @@ extraCSS: "/css/search.css"
   2) At least two different browser peformed the same query.
   3) Is at max 7 days old.
 
-{{<tk-extension-2 version="0.2.7">}}
+{{<tk-extension version="0.2.7">}}
 
 <script type="text/javascript" src="/js/global.js"></script>
 <script type="text/javascript" src="/js/search.js"></script>

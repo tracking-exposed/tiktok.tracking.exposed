@@ -6,6 +6,6 @@ layout: home
 extraCSS: "/css/tiktok.css"
 ---
 
-{{< tk-extension-2 version="0.2.7" >}}
+{{< tk-extension version="0.2.7" >}}
 
 ---
