@@ -1,5 +1,5 @@
 ---
-title: Query comparison page
+title: Search Query results comparison page
 subtitle: Every search query collected by tiktok.tracking.exposed goes here
 date: 2021-09-10T05:01:21+01:00
 draft: false
@@ -14,14 +14,19 @@ type: app
       <a title="back to query list" href="/queries">⬅️</a>
       Search results for:
     </div>
-    <div class="col-5 monospace" id="subject">
-    </div>
+    <div class="col-5 monospace" id="subject"></div>
     <div class="col-3 text-right monospace">
       <a id="repeat" target=_blank>repeat on tiktok</a>
     </div>
     <div class="col-1 monospace">
       <a id="csv">⬇️CSV</a>
     </div>
+  </div>
+
+  <hr/>
+
+  <div class="row">
+    <div id="pseudolist"></div>
   </div>
 
   <hr/>
@@ -47,17 +52,61 @@ type: app
     const data = await response.json();
     console.log(data);
     if(!data.length) {
-        $("#evidence--list")
-          .html('<span class="error">Error: no data found matching this query</span>')
-        return;
+      $("#evidence--list")
+        .html('<span class="error">Error: no data found matching this query</span>')
+      return;
     }
     $("#initially--hidden").removeAttr('hidden');
     $("#subject").text(decodeURI(term));
     $("#repeat").attr('href', 'https://www.tiktok.com/search?q=' + term);
     $("#csv").on('click', function() {
-        const csvurl = buildApiUrl('public/query', term + '/csv', 2);
-        window.location = csvurl;
-    })
+      const csvurl = buildApiUrl('public/query', term + '/csv', 2);
+      window.location = csvurl;
+    });
+
+    const grouped = _.groupBy(data, 'pseudo');
+    /* groupBy pseudo and then by 'timeago' */
+    const filterable = _.map(grouped, function(evidencelist, pseudo) {
+      const buttons = _.map(_.groupBy(evidencelist, 'timeago'), function(avail, timeago) {
+        const escapedt = timeago.replace(/\ /g, '-');
+        return `
+          <button
+            class="btn filter filter-${pseudo}"
+            id="${pseudo}-${escapedt}"
+            data-pseudo=${pseudo}
+            data-timeago=${escapedt}
+            >${timeago} [#${avail.length}]</button>
+        `;
+      }).join('\n');
+      return `<div class="row">
+        <span class="monospace spaceous">${evidencelist.length}</span>
+        <span>contributions from</span>
+        <span class="monospace spaceous">${pseudo}</span>
+        <span class="highlight-${pseudo}">click to exclude</span>
+      </div> ${buttons}`;
+    }).join('\n');
+    $("#pseudolist").html(filterable);
+
+    const pseudos = _.keys(grouped);
+    _.each(pseudos, function(pseudo) {
+      $(".filter-" + pseudo).mouseover(function(e) {
+        $(".highlight-" + pseudo).toggleClass('highlighted');
+      });
+      $(".filter-" + pseudo).on('mouseout', function(e) {
+        $(".highlight-" + pseudo).toggleClass('highlighted');
+      });
+    });
+
+    $(".filter").on('click', function(e) {
+      e.preventDefault();
+      pseudot = e.target.getAttribute('data-pseudo');
+      escapedt = e.target.getAttribute('data-timeago');
+      console.log("filtering", pseudot, escapedt);
+      const combo = pseudot + "-" + escapedt;
+      $("." + combo).fadeOut();
+      $("#" + combo).fadeOut();
+    });
+
     const html = _.map(data, produceSearchEntry).join('\n');
     $("#evidence--list").html(html);
 

@@ -24,7 +24,7 @@ function produceSearchEntry(o) {
   const publicationInfo = o.publishingDate ?
     `<b>Published</b>: <i>${o.publishingDate}</i><br>` : "";
 
-  return `<div class="search-row row ${o.pseudo}">
+  return `<div class="search-row row ${o.pseudo}-${o.timeago.replace(/\ /g, '-')}">
     <div class="col-8">
       <span class="order">${o.order}</span>
       <br>

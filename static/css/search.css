@@ -60,3 +60,20 @@ ol,ul {
   color: red;
   font-size: 3em;
 }
+
+button {
+  width: 200px;
+  border: 1px solid #dfa4b3 !important;
+  /* override border transparency from 'btn' class */
+  margin-bottom: 1px;
+}
+
+.spaceous {
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.highlighted {
+  background-color: #fadde4;
+  text-decoration: underline;
+}
