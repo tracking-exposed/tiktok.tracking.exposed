@@ -107,7 +107,8 @@ type: app
       $("#" + combo).fadeOut();
     });
 
-    const html = _.map(data, produceSearchEntry).join('\n');
+    /* crucial for visualization is to sort by 'order' */
+    const html = _.map(_.sortBy(data, 'order'), produceSearchEntry).join('\n');
     $("#evidence--list").html(html);
 
   });
