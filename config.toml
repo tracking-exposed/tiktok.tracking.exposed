@@ -30,10 +30,10 @@ canonifyURLs = true
     name = "Stats"
     url = "/stats"
     weight = 2
- #[[menu.main]]
- #   name = "Research"
- #   url = "/research"
- #   weight = 3
+ [[menu.main]]
+    name = "MozFest"
+    url = "/slides/mozfest"
+    weight = 3
  #[[menu.main]]
  #   name = "Services"
  #   url = "/services"
