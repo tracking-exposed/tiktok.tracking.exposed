@@ -7,6 +7,10 @@
   height: 100%;
 }
 
+#personal {
+  text-align: center;
+}
+
 .counter--entry {
   text-align: center;
   background-color: lightgoldenrodyellow;

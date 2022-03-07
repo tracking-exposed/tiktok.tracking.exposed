@@ -7,26 +7,25 @@ extraCSS: "/css/personal.css"
 type: app 
 ---
 
-<!--
-<h3>Collected data from your browser extension</h3>
-<div class="row" id="counters">
+<div class="row" id="personal">
     <div class="col-4">
-        <div class="counter--entry" id="total--htmls">
+        <div class="counter--entry" id="pseudonym">
         </div>
-        Total HTML snapshot
+        Pseudonym
     </div>
     <div class="col-4">
         <div class="counter--entry" id="total--metadata">
         </div>
-        metadata extracted ( <i>following, foryou</i> )
+        metadata extracted
     </div>
     <div class="col-4">
-        <div class="counter--entry" id="total--full">
+        <div class="counter--entry" id="created--at">
         </div>
-        Total <b>full dump</b>
+        created at
     </div>
 </div>
--->
+
+<hr />
 
 <div class="row">
   <div class="col-3">
@@ -117,6 +116,25 @@ type: app
 <script type="text/javascript" src="/js/generated/taboule.js"></script>
 <script type="text/javascript">
 
+  async function fillUpPersonal(personalKey) {
+    const url = buildApiUrl('personal', t + '/summary/json', 2);
+    const response = await fetch(url);
+    try {
+        const data = await response.json();
+        console.log(data);
+        /* creationTime: "2022-03-07T08:45:12.512Z"
+           lastActivity: "2022-03-07T08:45:12.512Z"
+           p: "okra-cucumber-bun"
+           publicKey: "HB..."
+           version: "2.4.3" */
+        $("#pseudonym").text(data.supporter.p);
+        $("#created--at").text(data.supporter.creationTime);
+        $("#total--metadata").text(data.counters.metadata);
+    } catch(error) {
+        console.log(error);
+    }
+  }
+
   const t = window.location.href.split('/#').pop();
   if(t.length !== 44 ) {
     console.log("Wrong token length in the URL", t.length);
@@ -124,6 +142,8 @@ type: app
     $("h3").text("Missing key in the URL; The browser extension generates automatically an access key the first time you access to tiktok.com from this browser.");
   }
   else {
+
+    fillUpPersonal(t);
 
     $("#foryou--csv").on('click', function() {
         const csvurl = buildApiUrl('personal', t + '/foryou/csv', 2);
