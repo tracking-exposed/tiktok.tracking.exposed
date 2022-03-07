@@ -1,0 +1,256 @@
+---
+title: "MozFest — Tutorial"
+subtitle: "Install and use the browser extension to analyze the TikTok's opaque algorithm"
+draft: false
+date: "2022-3-6"
+og_title: "Tutorial for everybody, algorithm transparency should be a common practise!"
+og_type: "website"
+og_description: "Expose hidden censorship with a funny tool"
+type: "webslides"
+extraCSS: "/css/slides.css"
+---
+
+<section class="bg-black">
+    <div class="aligncenter fadeIn slow">
+        <h1 class="strong secondary">Mapping Shadow-Ban on TikTok:</h1>
+        <h4 class="third">Expose hidden censorship with a cross-national research</h4>
+        <p class="text-intro"> </p>
+        <br>
+        <p class="text-symbols">* * * </p>
+        <p class="text-intro">
+            (<a target="_blank" href="https://tracking.exposed"><u>Tracking.Exposed project</u></a>)
+        </p>
+    </div>
+</section>
+
+<section class="bg-black">
+    <div class="wrap">
+        <div class="grid vertical-align">
+            <div class=column>
+                <img class="zoomIn" src="/images/slides/wetest-know.svg">
+            </div>
+            <br>
+            <div class="column">
+                <h1 class="fadeIn slow">Analyzing platforms </h1>
+                <p class="text-symbols">since 2016</p>
+                <h4 class="aligncenter">
+                    Our tools collect data to decipher the functioning of
+                    proprietary <b>algorithms</b> in the <b>public interest</b>.
+                    (<a href="https://github.com/tracking-exposed/yttrex" target=_blank>git</a>, AGPL-3)
+                    <br><br>
+                    Check our tools also for <br>
+                    <a href="https://youtube.tracking.exposed" target=_blank>YouTube</a>,
+                    <a href="https://facebook.tracking.exposed" target=_blank>FaceBook</a>,
+                    <a href="https://pornhub.tracking.exposed" target=_blank>PornHub</a>.
+
+                </h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="wrap">
+        <figure class="zoomIn aligncenter">
+            <img class="svg" style="width:55%; padding-bottom: 5rem;" src="/images/header-logo-tiktok.svg"></img>
+        </figure>
+        <h3 class="aligncenter fadeIn slow">A browser extension to passively scrape TikTok and collect
+            algorithm's outputs (such as videos suggested in the "search" page, "for you" page ...)
+        </h3>
+    </div>
+</section>
+
+<section class="bg-black">
+    <div class="wrap">
+        <div class="grid vertical-align">
+            <div class="column">
+                <h1 class="slideInLeft secondary aligncenter strong">Previous leaks</h1>
+                <p class="text-symbols third aligncenter">* * * </p>
+                <p class="aligncenter">
+                    <code><a target="_blank" href="https://theintercept.com/2020/03/16/tiktok-app-moderators-users-discrimination/">The Intercept, 2020 </a></code>
+                </p>
+                <h5 class="aligncenter ">Internal documents leaked by The Intercept have shown that TikTok moderators
+                    were explicitly instructed to ban
+                    politically sensitive content for the Chinese Communist Party, such as posts referring to the
+                    Tiananmen Square protests.</h5>
+                <h5 class="aligncenter strong">The company declared that these policies are no longer in place. Though,
+                    no independent study has been able to confirm
+                    their claims.</h5>
+            </div>
+            <div class=column>
+                <img class="zoomIn" src="/images/slides/theintercept.avif">
+            </div>
+        </div>
+</section>
+
+<section class="bg-black">
+    <div class="wrap">
+        <div class="grid vertical-align">
+            <div class=column>
+                <img class="zoomIn" src="/images/slides/aspi.jpg">
+            </div>
+            <br>
+            <div class="column">
+                <h1 class="slideInRight secondary strong">Previous researches</h1>
+                <p class="text-symbols">* * * </p>
+                <p class="aligncenter">
+                    <code><a target="_blank" href="https://www.aspi.org.au/report/tiktok-wechat">ASPI (Ryan et al., 2020)</a></code>
+                </p>
+                <h5 class="aligncenter">
+                    The report indicated that TikTok engages in censorship on various political and
+                    social topics such as the discussion on LGBTQ+ related topics and diverse
+                    political issues and leaders.
+                </h5>
+                <h5 class="aligncenter strong">
+                    Specifically, the research found that shadowban and censorship are affected by
+                    country-specific content guidelines.
+                </h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-yt">
+    <span class=background style="background-image:url('/images/slides/black-smoke.jpeg')"></span>
+    <div class="wrap size-50 frame" style="border-style: dashed;">
+        <h1 class="aligncenter secondary"> <b>Today collective observation: </b> </h1>
+        <p class="text-symbols secondary">* * *</p>
+        <ol class="third aligncenter">
+            <li>
+                <h4> Install the browser extension for <a target="_blank"
+                        href="https://addons.mozilla.org/en-US/firefox/addon/triktroktrex/"><u>Firefox</u></a> or <a target="_blank"
+                        href="https://chrome.google.com/webstore/detail/triktroktrex/bigbeiocbgkhndacjnkklogbilfchijf?hl=it&authuser=0"><u>Chrome</u></a> </h4>
+            <li>
+                <h4> Perform any action on TikTok.com to record the algorithm suggestions</h4>
+            </li>
+            <li>
+                <h4> Open your personal page and compare the results!</h4>
+            </li>
+        </ol>
+    </div>
+</section>
+
+
+<!--
+<section class="bg-black">
+    <div class="wrap">
+        <h1 class="third aligncenter strong">Research questions</h1>
+        <ul class="flexblock reasons">
+            <li>
+                <h2 class="secondary strong">Shadow-Ban Detector</h2>
+                <p class="third">How can we spot banned and shadow-banned content? How can we automate the process of detecting these forms of
+                censorship?</p>
+            </li>
+            <li>
+                <h2 class="secondary strong">Cross-National Bans</h2>
+                <p class="third">Which criteria does the platform implement to censor content? Which of these criteria is location-sensitive?</p>
+            </li>
+            <li>
+                <h2 class="secondary strong">Algorithmic Neutrality</h2>
+                <p class="third">Investigate the algorithmic neutrality regarding political content: which content is promoted or demoted on the
+                platform? To answer this question, we could focus on the upcoming presidential elections in France.</p>
+            </li>
+        </ul>
+    </div> </span>
+</section>
+-->
+
+<section class="bg-black">
+    <div class="wrap">
+        <div class="grid vertical-align">
+            <div class="column">
+                <h1 class="slideInLeft secondary aligncenter">
+                    <b>Analysis:</b>
+                </h1>
+                <ul class="description aligncenter">
+                    <li>
+                        <h4>1. Individual / Qualitative</h4>
+                        </h4>
+                    </li>
+                    <li>
+                        <h4>2. Statistical: Python/<a target="_blank" href="/wetest/distribution/">d3js</a>
+                    </li>
+                    <li>
+                        <h4>3. Network: <a target="_blank" href="https://medialab.github.io/table2net/">Table2Net</a> <a target="_blank" href="https://gephi.org/">Gephi</a></h4>
+                    </li>
+                </ul>
+            </div>
+            <div class="column">
+                    <img class="svg" src="/images/slides/distribution_eng.png"></img>
+                <p class="aligncenter"><a target="_blank" href="/slides/wetest1">WeTest Youtube with Covid, the paper</a></p>
+            </div>
+            <div class="column">
+                    <img class="zoomIn" src="/images/slides/Category4u.png">
+                <p class="aligncenter"><a target="_blank" href="https://pornhub.tracking.exposed/slides/heteronormativity/#slide=12">PornHub & heteronormativity, the paper</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!--                  <img src="/images/slides/guardoni2.svg">
+-->
+
+<section>
+    <span class=background style="background-image:url('/images/slides/black-cubes.jpeg')"></span>
+    <div class="wrap aligncenter fadeInUp">
+        <h2 class="secondary"> Our BOTS named <a target="_blank" rel="noopener noreferrer"
+                href="https://github.com/tracking-exposed/yttrex/tree/master/guardoni">guardoni.js</a> <br> can help to scale
+        </h2>
+        <div class="row mb-5 mt-5">
+            <div class="col-sm text-center">
+                <img src="/images/slides/addon.png"> <br><br>
+                <h4 class="secondary">Adding the browserextension</h4> 
+                <p class="white">By default on every new clean browser profile</p>
+            </div>
+            <div class="col-sm text-center">
+                <img src="/images/slides/click.png"> <br><br>
+                <h4 class="secondary">Open the ForYouPage</h4>
+                <p class="white">or thesearch page (avoiding PTSD)</p>
+            </div>
+            <div class="col-sm text-center">
+                <img src="/images/slides/unravel.png"> <br><br>
+                <h4 class="secondary">Unravel the algorithmic mist</h4>
+                <p class="white">starting from a .csv release</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="bg-black">
+    <div class="wrap">
+        <div class="wrap size-50 frame" style="border-color: #CBC9AD; border-style: dashed;">
+            <h1 class="aligncenter secondary"> <b>Join the project!</b> </h1>
+            <p class="text-symbols third strong">Participate in the research as academic and/or
+                    activist</p>
+            <h4 class="aligncenter">
+            <h2 class="secondary">info(@)tracking(.)exposed</h2>
+            </h4>
+            <p class="text-symbols aligncenter third strong" >Download the add-on <br> and collect
+                    data with us.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    removeHeaderFooter(1500)
+
+    $(document).ready(function () {
+        let visibleFooter = false;
+        /* if the mouse goes out, for four second leave the bar */
+        $(document).mouseleave(function () {
+            $('header').fadeIn(40);
+            window.setTimeout(function () {
+                $('header').fadeOut(40);
+            }, 4000);
+        });
+        $("#final-slide").on('mousemove', function () {
+            visibileFooter = !visibleFooter && restoreHeaderFooter(800);
+        });
+    }
+    );
+</script>
