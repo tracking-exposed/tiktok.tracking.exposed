@@ -1,9 +1,12 @@
 ---
 title: Collected Search Queries
-subtitle: Only by comparing how TikTok answer you'll understand how the algorithm affects perception
+subtitle: Only by comparing how TikTok answers you'll understand how the algorithm affects perception
 date: 2022-01-10T05:01:21+01:00
 draft: false
 extraCSS: "/css/search.css"
+
+og_title: "Collected Search Queries"
+og_description: "Only by comparing how TikTok answers you'll understand how the algorithm affects perception."
 ---
 
 # 🔎 Search Query List
