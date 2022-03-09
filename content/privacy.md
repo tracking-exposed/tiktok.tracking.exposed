@@ -8,6 +8,8 @@ extraCSS: "/css/informative.css"
 
 ##### Last update — 22 January 2022
 
+{{<tk-extension version="0.2.7">}}
+
 _By installing the browser extension and enabling the opt-in, you are accepting the "Data Donation Agreement," hereby drafted:_
 
 ## When you enable the Data Donation feature, you agree to share with [us](https://tracking.exposed/about) the recommendations that TikTok shows to you and the research results, as they are personalized too.

@@ -30,33 +30,33 @@ canonifyURLs = true
     name = "Stats"
     url = "/stats"
     weight = 2
- [[menu.main]]
-    name = "MozFest"
-    url = "/slides/mozfest"
-    weight = 3
- #[[menu.main]]
- #   name = "Services"
- #   url = "/services"
- #   weight = 4
+# [[menu.main]]
+#    name = "MozFest"
+#    url = "/slides/mozfest"
+#    weight = 3
+# [[menu.main]]
+#    name = "Services"
+#    url = "/services"
+#    weight = 4
 
- [[menu.featured]]
-    name = "Build your own tktrex"
-    url = "/software"
-    pre = "/images/github.svg"
-    post = "Backend, parser, scraping extension, website — all AGPL-3 licensed"
-    weight = 1
- [[menu.featured]]
-    name= "Data Format and Tools"
-    url = "/docs/tktrex/api"
-    pre = "/images/csv.png"
-    post = "Which metadata can you extract from TikTok, and few tips on how you can use it as data analyst"
-    weight = 2
- [[menu.featured]]
-    name = "on Geo-Banning"
-    url = "/ws22-shadowban-research"
-    pre = "/images/imageglitcher-oflo.png"
-    weight = 3
-    post = "the DMI research sprint, in January'22 has explored geobanning via search keywords"
+# [[menu.featured]]
+#    name = "Build your own tktrex"
+#    url = "/software"
+#    pre = "/images/github.svg"
+#    post = "Backend, parser, scraping extension, website — all AGPL-3 licensed"
+#    weight = 1
+# [[menu.featured]]
+#    name= "Data Format and Tools"
+#    url = "/docs/tktrex/api"
+#    pre = "/images/csv.png"
+#    post = "Which metadata can you extract from TikTok, and few tips on how you can use it as data analyst"
+#    weight = 2
+# [[menu.featured]]
+#    name = "on Geo-Banning"
+#    url = "/ws22-shadowban-research"
+#    pre = "/images/imageglitcher-oflo.png"
+#    weight = 3
+#    post = "the DMI research sprint, in January'22 has explored geobanning via search keywords"
 
  [[menu.footer]]
     name = "No, there are not Cookies!"
