@@ -17,7 +17,8 @@ og_description: "We build free-software to investigate TikTok's algorithm and an
 
 ### Algorithmic Accountability since 2016
 
-Our pioneering research on YouTube, Amazon, Facebook and PornHub has been featured in [the New York Times](https://www.nytimes.com/interactive/2020/03/02/technology/youtube-conspiracy-theory.html), the Guardian, [Le Monde](https://www.lemonde.fr/pixels/article/2020/03/06/videos-complotistes-youtube-a-la-capacite-de-moderer-son-contenu-lorsqu-il-en-a-la-volonte-politique_6032050_4408996.html), and in [United Nation](https://undocs.org/pdf?symbol=en/A/73/348) reports and [a letter](https://malinowski.house.gov/sites/malinowski.house.gov/files/Letter%20to%20YouTube%20--%20Malinowski_Eshoo_final_0.pdf) from the US Congress to YouTube. Our funders include European Commission, Mozilla and Reset.Tech.
+
+[Our pioneering research](https://tracking.exposed/publications/), on [YouTube](https://youtube.tracking.exposed), [Amazon](https://amazon.tracking.exposed), [Facebook](https://facebook.tracking.exposed) and [PornHub](https://pornhub.tracking.exposed) has been featured in [the New York Times](https://www.nytimes.com/interactive/2020/03/02/technology/youtube-conspiracy-theory.html), the Guardian, [Le Monde](https://www.lemonde.fr/pixels/article/2020/03/06/videos-complotistes-youtube-a-la-capacite-de-moderer-son-contenu-lorsqu-il-en-a-la-volonte-politique_6032050_4408996.html), and in [United Nation](https://undocs.org/pdf?symbol=en/A/73/348) reports and [a letter](https://malinowski.house.gov/sites/malinowski.house.gov/files/Letter%20to%20YouTube%20--%20Malinowski_Eshoo_final_0.pdf) from the US Congress to YouTube. Our funders include European Commission, Mozilla and Reset.Tech.
 
 ### Now, we also investigate TikTok
 
