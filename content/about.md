@@ -6,17 +6,20 @@ extraCSS: "/css/informative.css"
 draft: false
 ---
 
-### on Tiktok Algorithm analysis 
+### The TikTok Observatory is part of Tracking.Exposed
 
-Algorithm analysis is a mixture of data collection tools, a methodology, and a proper research question. We would never decode the TikTok algorithm, but for us a success looke like a **more informed debate on algorithms, on its impact, dynamics, and power.**
+Tracking Exposed investigates how social media impacts our society. As a non-profit organization, we research, campaign and build tools to create a truly free internet.
 
-### on Shadowban
+### Algorithmic Accountability since 2016
 
-Still, in 2022 it is unclear what shadowban is, as every platform implements its version of this subtle form of censorship punishment, and they justify it as part of their business interest. Therefore, **we develop free software tools and methodology to unveil the rightful question of power the presence of this tool should raise.**
+Our pioneering research on YouTube, Amazon, Facebook and PornHub has been featured in [the New York Times](https://www.nytimes.com/interactive/2020/03/02/technology/youtube-conspiracy-theory.html), the Guardian, [Le Monde](https://www.lemonde.fr/pixels/article/2020/03/06/videos-complotistes-youtube-a-la-capacite-de-moderer-son-contenu-lorsqu-il-en-a-la-volonte-politique_6032050_4408996.html), and in [United Nation](https://undocs.org/pdf?symbol=en/A/73/348) reports and [a letter](https://malinowski.house.gov/sites/malinowski.house.gov/files/Letter%20to%20YouTube%20--%20Malinowski_Eshoo_final_0.pdf) from the US Congress to YouTube. Our funders include European Commission, Mozilla and Reset.Tech.
 
-### And about us?
+### Now, we also investigate TikTok
 
-We are the [tracking.exposed team](https://tracking.exposed/about): **we want people in control of their algorithm**; the road is long, raising awareness enabling the most independent and distributed form of platform accountability is our current goal.
+We hold the platform to account by:
+- Building free-software research tools
+- Empowering regulators with technical reports
+- Raising public awareness
 
 ### Contacts
 
@@ -24,9 +27,8 @@ Check out our twitter [@trackingexposed](https://twitter.com/trackingexposed), o
 
 ### Bonus track — the other pages — and a few of these aren't even linked!
 
-1. Our consulting [services](/services).
-2. The list of recent comparable search [queries](/queries).
+1. Our technical capabilities [services](/services).
+2. The results of the most common TikTok queries from our community [queries](/queries).
 3. Our [Privacy](/privacy) Statement did you read why **Data Donation** matters?
 4. We don't use [Cookies](/cookies)... so let's brag about it
-5. This is how you can review the search results; test with [Happyness](https://tiktok.tracking.exposed/search/#happyness). Also, if If you are logged on TikTok [Repeat the same query](https://www.tiktok.com/search?q=happyness).
-6. The TikTok algorithm [Commentary](/commentary) on TikTok!
+5. The TikTok algorithm [Commentary](/commentary) on TikTok!
