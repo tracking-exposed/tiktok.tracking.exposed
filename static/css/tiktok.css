@@ -88,3 +88,15 @@ small {
 .cta p {
     font-weight: 100 !important;
 }
+
+h1 {
+    font-size: 5em;
+}
+
+.logo-show {
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em;
+}
