@@ -1,0 +1,103 @@
+---
+title: TikTok Algortihm Observatory
+date: 2021-11-22T15:01:21+01:00
+draft: false
+layout: "homecta"
+extraCSS: "/css/tiktok.css"
+---
+
+<div class="jumbotron jumbotron-home">
+  <div class="container">
+    <h1 class="display-4 font-weight-bold">
+      TikTok Observatory
+    </h1>
+    <h2>
+      Investigating political shadow-banning and algorithm demotion
+    </h2>
+  </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-5 text-center">
+      <a
+        target=_blank
+        href="https://foundation.mozilla.org/en/blog/a-new-way-to-keep-tiktok-accountable">
+        <img src="/images/mozilla-tiktok.png" width="100%" />
+        <small>
+            https://foundation.mozilla.org/en/blog/a-new-way-to-keep-tiktok-accountable
+        </small>
+      </a>
+    </div>
+    <div class="col-md-5">
+        <br>
+        <br>
+        <p class="sider">
+            Since 2016 we’ve been investigating the impact of social media algorithms on society.
+        </p>
+        <p class="sider">
+            It has never been more important to hold platforms like TikTok to account in light of the war in Ukraine, and we plan to step up our work - with your help.
+        </p>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+
+
+</div>
+
+<div class="container cta-container">
+
+  <div class="col-md-1"></div>
+
+  <h2 class="cta">
+    Join us and stand with 🇺🇦
+  </h2>
+  <p>
+      be the first to know about our next campaign
+  </p>
+
+  <div class="email-box">
+    <form>
+      <input id="email--address" type="email" name="email" class="email-box__input" placeholder="email@domain" />
+      <br>
+      <button id="mail--button" class="btn btn-primary">Add me!</button>
+    </form>
+  </div>
+
+  <div class="col-md-1"></div>
+
+</div>
+
+
+<script src="/js/global.js"></script>
+<script type="text/javascript">
+
+  $("#mail--button").click(function(evnt) {
+    evnt.preventDefault();
+    $("#mail--button").text("...");
+
+    fetch(buildApiUrl("registerEmail", null, 3), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        'email': $('#email--address').val(),
+        'reason': 'update--on--YCAI--release',
+      })
+    })
+    .then(function(result) {
+      console.log(result.status);
+      if(result.status === 403)
+        $("#mail--button").text("💥");
+      else if(result.status === 200)
+        $("#mail--button").text("👍");
+      else if(result.status === 201)
+        $("#mail--button").text("🙋");
+      else
+        $("#mail--button").text("<error>");
+    });
+  });
+
+</div>
+
+</script>
