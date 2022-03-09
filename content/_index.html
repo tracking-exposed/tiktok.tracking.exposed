@@ -106,6 +106,7 @@ extraCSS: "/css/tiktok.css"
 
     </div>
   </div>
+</div>
 
 
 <script src="/js/global.js"></script>
@@ -115,20 +116,20 @@ extraCSS: "/css/tiktok.css"
     evnt.preventDefault();
     $("#mail--button").text("...");
 
-    fetch(buildApiUrl("registerEmail", null, 3), {
+    fetch(buildApiUrl("registerEmail"), {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
         'email': $('#email--address').val(),
-        'reason': 'update--on--YCAI--release',
+        'reason': 'subscribe-to-ukraine',
       })
     })
     .then(function(result) {
       console.log(result.status);
       if(result.status === 403)
-        $("#mail--button").text("💥");
+        $("#mail--button").text("⛔");
       else if(result.status === 200)
         $("#mail--button").text("👍");
       else if(result.status === 201)
@@ -137,7 +138,5 @@ extraCSS: "/css/tiktok.css"
         $("#mail--button").text("<error>");
     });
   });
-
-</div>
 
 </script>
