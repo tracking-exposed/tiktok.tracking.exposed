@@ -1,14 +1,19 @@
 ---
-title: Know more about TikTok Tracking Exposed
-subtitle: — Hunting algorithmic discrimination and measuring its impact —
+title: About the TikTok Observatory
+subtitle: — Investigating the influential algorithm —
 date: 2022-01-22
 extraCSS: "/css/informative.css"
 draft: false
+og_title: "Tracking Exposed TikTok Observatory"
+og_type: "website"
+og_image: "https://tiktok.tracking.exposed/images/mozilla-tiktok.png"
+og_url: "https://tiktok.tracking.exposed/about/"
+og_description: "We build free-software to investigate TikTok's algorithm and analyze its impact on our society."
 ---
 
 ### The TikTok Observatory is part of Tracking.Exposed
 
-Tracking Exposed investigates how social media impacts our society. As a non-profit organization, we research, campaign and build tools to create a truly free internet.
+[Tracking.Exposed](https://tracking.exposed) investigates how social media impacts our society. As a non-profit organization, we research, campaign and build tools to create a truly free internet.
 
 ### Algorithmic Accountability since 2016
 
@@ -16,10 +21,10 @@ Our pioneering research on YouTube, Amazon, Facebook and PornHub has been featur
 
 ### Now, we also investigate TikTok
 
-We hold the platform to account by:
-- Building free-software research tools
-- Empowering regulators with technical reports
-- Raising public awareness
+We hold the platform to account by:<br>
+⭕ Building free-software research tools<br>
+⭕ Empowering regulators with technical reports<br>
+⭕ Raising public awareness
 
 ### Contacts
 
