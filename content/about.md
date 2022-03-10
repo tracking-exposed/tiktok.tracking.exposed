@@ -27,14 +27,20 @@ We hold the platform to account by:<br>
 ⭕ Empowering regulators with technical reports<br>
 ⭕ Raising public awareness
 
+### Big Tech spies on you, together we can spy on them
+
+In order to investigate TikTok, we rely on a browser extension which collects the content served by the algorithm. To participate in the data donation and help us study algorithmic amplification and shadow banning:
+{{< tk-extension version="0.2.7" >}}
+
 ### Contacts
 
 Check out our twitter [@trackingexposed](https://twitter.com/trackingexposed), or drop an email to _info_ @ _tracking_ . _exposed_
 
-### Bonus track — the other pages — and a few of these aren't even linked!
+You might also be interested in:
 
-1. Our technical capabilities [services](/services).
-2. The results of the most common TikTok queries from our community [queries](/queries).
-3. Our [Privacy](/privacy) Statement did you read why **Data Donation** matters?
-4. We don't use [Cookies](/cookies)... so let's brag about it
+1. A deck of our [initial results on political shadow-banning](https://docs.google.com/presentation/d/e/2PACX-1vSaNiJRE9u4IDRtIg-0WPrPfAVc_18Rfrm_QZu3tERQkrGBycVLkduj9E-35SOrZXWHnybLObJSqgU1/pub?start=false&loop=false&delayms=3000)
+2. [A workshop](/slides/mozfest/) on how to use the TikTok Tracking Exposed for research at the Mozilla festival
+3. The results of the most common TikTok queries from our community [queries](/queries).
+4. Our [Privacy](/privacy) Statement did you read why **Data Donation** matters?
 5. The TikTok algorithm [Commentary](/commentary) on TikTok!
+6. An overview of our technical capabilities [services](/services).
