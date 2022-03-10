@@ -10,6 +10,8 @@ og_image: "https://tiktok.tracking.exposed/images/mozilla-tiktok.png"
 og_url: "https://tiktok.tracking.exposed/about/"
 og_description: "We build free-software to investigate TikTok's algorithm and analyze its impact on our society."
 ---
+<div class="row justify-content-md-center">
+    <div class="col-md-8    ">
 
 ### The TikTok Observatory is part of Tracking.Exposed
 
@@ -35,7 +37,7 @@ We hold the platform to account by:<br>
 ⭕ A deck of our [initial results on political shadow-banning](https://docs.google.com/presentation/d/e/2PACX-1vSaNiJRE9u4IDRtIg-0WPrPfAVc_18Rfrm_QZu3tERQkrGBycVLkduj9E-35SOrZXWHnybLObJSqgU1/pub?start=false&loop=false&delayms=3000)
 <br>
 
-### Big Tech spies on you, together we can spy on them
+### Big Tech spies on you, <br> together we can spy on them
 
 In order to investigate TikTok, we rely on a browser extension which collects the content served by the algorithm. To participate in the data donation and help us study algorithmic amplification and shadow banning:
 
@@ -44,7 +46,7 @@ In order to investigate TikTok, we rely on a browser extension which collects th
 
 ### Contacts
 
-Check out our twitter [@trackingexposed](https://twitter.com/trackingexposed), or drop an email to _info_ @ _tracking_ . _exposed_
+Check out our twitter [@trackingexposed](https://twitter.com/trackingexposed), or drop an email to <br> <u> info @ tracking . exposed </u>
 
 You might also be interested in:
 
@@ -53,3 +55,6 @@ You might also be interested in:
 3. The TikTok algorithm [Commentary](/commentary) on TikTok!
 4. An overview of our technical capabilities [services](/services).
 5. Open adoption [stats](/stats).
+
+    </div>
+</div>
