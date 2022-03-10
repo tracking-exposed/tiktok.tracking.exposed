@@ -22,7 +22,7 @@ og_description: "We build free-software to investigate TikTok's algorithm and an
 ### Now, we also investigate TikTok
 
 We hold the platform to account by:<br>
-⭕ Building free-software research tools<br>
+⭕ Building free-software research tools, check out the current [API documentation](/docs/tktrex/api/list-queries)<br>
 ⭕ Empowering regulators with technical reports<br>
 ⭕ Raising public awareness
 
