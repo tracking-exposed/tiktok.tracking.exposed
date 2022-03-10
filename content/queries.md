@@ -21,7 +21,7 @@ og_description: "Only by comparing how TikTok answers you'll understand how the 
 * To enter the list above, we only the search query that:
   1) Got actual video as answer from TikTok (no errors, for example, on Guideline Community Violations).
   2) At least two different browser peformed the same query.
-  3) Is at max 7 days old.
+  3) Is at max 3 weeks old.
 
 {{<tk-extension version="0.2.7">}}
 
