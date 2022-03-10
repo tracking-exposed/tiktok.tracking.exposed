@@ -10,8 +10,9 @@ og_image: "https://tiktok.tracking.exposed/images/mozilla-tiktok.png"
 og_url: "https://tiktok.tracking.exposed/about/"
 og_description: "We build free-software to investigate TikTok's algorithm and analyze its impact on our society."
 ---
+
 <div class="row justify-content-md-center">
-    <div class="col-md-8    ">
+<div class="col-md-8">
 
 ### The TikTok Observatory is part of Tracking.Exposed
 
@@ -56,5 +57,5 @@ You might also be interested in:
 4. An overview of our technical capabilities [services](/services).
 5. Open adoption [stats](/stats).
 
-    </div>
+</div>
 </div>
