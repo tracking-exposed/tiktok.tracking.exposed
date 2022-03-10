@@ -17,7 +17,6 @@ og_description: "We build free-software to investigate TikTok's algorithm and an
 
 ### Algorithmic Accountability since 2016
 
-
 [Our pioneering research](https://tracking.exposed/publications/), on [YouTube](https://youtube.tracking.exposed), [Amazon](https://amazon.tracking.exposed), [Facebook](https://facebook.tracking.exposed) and [PornHub](https://pornhub.tracking.exposed) has been featured in [the New York Times](https://www.nytimes.com/interactive/2020/03/02/technology/youtube-conspiracy-theory.html), the Guardian, [Le Monde](https://www.lemonde.fr/pixels/article/2020/03/06/videos-complotistes-youtube-a-la-capacite-de-moderer-son-contenu-lorsqu-il-en-a-la-volonte-politique_6032050_4408996.html), and in [United Nation](https://undocs.org/pdf?symbol=en/A/73/348) reports and [a letter](https://malinowski.house.gov/sites/malinowski.house.gov/files/Letter%20to%20YouTube%20--%20Malinowski_Eshoo_final_0.pdf) from the US Congress to YouTube. Our funders include European Commission, Mozilla and Reset.Tech.
 
 ### Now, we also investigate TikTok
@@ -27,9 +26,20 @@ We hold the platform to account by:<br>
 ⭕ Empowering regulators with technical reports<br>
 ⭕ Raising public awareness
 
+### Since 2022, we release some research output
+
+⭕ A [Shadow-banning investigation](/ws22-shadowban-research) January 2022
+<br>
+⭕ A [workshop](/slides/mozfest/) on how to use the TikTok Tracking Exposed for research at the Mozilla festival
+<br>
+⭕ A deck of our [initial results on political shadow-banning](https://docs.google.com/presentation/d/e/2PACX-1vSaNiJRE9u4IDRtIg-0WPrPfAVc_18Rfrm_QZu3tERQkrGBycVLkduj9E-35SOrZXWHnybLObJSqgU1/pub?start=false&loop=false&delayms=3000)
+<br>
+
 ### Big Tech spies on you, together we can spy on them
 
 In order to investigate TikTok, we rely on a browser extension which collects the content served by the algorithm. To participate in the data donation and help us study algorithmic amplification and shadow banning:
+
+
 {{< tk-extension version="0.2.7" >}}
 
 ### Contacts
@@ -38,9 +48,8 @@ Check out our twitter [@trackingexposed](https://twitter.com/trackingexposed), o
 
 You might also be interested in:
 
-1. A deck of our [initial results on political shadow-banning](https://docs.google.com/presentation/d/e/2PACX-1vSaNiJRE9u4IDRtIg-0WPrPfAVc_18Rfrm_QZu3tERQkrGBycVLkduj9E-35SOrZXWHnybLObJSqgU1/pub?start=false&loop=false&delayms=3000)
-2. [A workshop](/slides/mozfest/) on how to use the TikTok Tracking Exposed for research at the Mozilla festival
 3. The results of the most common TikTok queries from our community [queries](/queries).
-4. Our [Privacy](/privacy) Statement did you read why **Data Donation** matters?
-5. The TikTok algorithm [Commentary](/commentary) on TikTok!
-6. An overview of our technical capabilities [services](/services).
+2. Our [Privacy](/privacy) Statement did you read why **Data Donation** matters?
+3. The TikTok algorithm [Commentary](/commentary) on TikTok!
+4. An overview of our technical capabilities [services](/services).
+5. Open adoption [stats](/stats).
