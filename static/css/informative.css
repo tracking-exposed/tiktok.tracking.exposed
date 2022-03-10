@@ -1,13 +1,14 @@
 /* h1 is reserved for the title */
 
-h2 {
-    font-size: 1.8rem;
-}
 
 h3 {
     font-family: monospace;
+    font-weight: 600;
     color: #ee1d52;
     font-size: 1.7rem;
+    line-height: 2rem;
+    padding-top: 2em;
+    padding-bottom: 0.3em;
 }
 
 /* h4 still not allocated */
@@ -27,7 +28,9 @@ h6 {
 
 p {
     margin: 20px 0px 20px 0px;
+    padding-right: 50px;
     font-size: 1.4rem;
+    line-height: 2.3rem;
 }
 
 ol {
@@ -35,3 +38,8 @@ ol {
 }
 
 /* I'm not overriding li and ul because they are used in the footer */
+
+.container_text{
+    max-width: 50%;
+}
+
