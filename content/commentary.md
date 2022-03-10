@@ -1,6 +1,6 @@
 ---
 title: TikTok Self Commentary
-subtitle: Meaningful TikTok videos that talks about TikTok algorithm
+subtitle: Meaningful TikTok videos that talk about TikTok algorithm
 date: 2022-01-22
 extraCSS: "/css/informative.css"
 draft: false

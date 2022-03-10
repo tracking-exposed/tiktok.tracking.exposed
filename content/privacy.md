@@ -5,8 +5,10 @@ date: 2022-01-22
 draft: false
 extraCSS: "/css/informative.css"
 ---
+<div class="row justify-content-md-center">
+    <div class="col-md-8">
 
-##### Last update — 22 January 2022
+### Last update — 22 January 2022
 
 {{<tk-extension version="0.2.7">}}
 
@@ -37,7 +39,9 @@ The TikTok algorithms are known to randomize the exposure, allowing the lucky Co
 Researchers also use the data you contribute to study the algorithm and help inform regulators on various subjects, ranging from individual privacy to censorship, which can ultimately lead to better laws that protect you.
 
 
-###### Data Donation affects only the activity on your browser — our browser extension does not impact the mobile app.
----
+#### Data Donation affects only the activity on your browser — our browser extension does not impact the mobile app.
 
 We are a non-profit operating for the public interest; we are not making money off data. Check out our [partner section](https://tracking.exposed/about) to know our sponsors.
+
+</div>
+</div>

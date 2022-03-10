@@ -59,10 +59,14 @@ canonifyURLs = true
 #    post = "the DMI research sprint, in January'22 has explored geobanning via search keywords"
 
  [[menu.footer]]
-    name = "No, there are not Cookies!"
+    name = "We don't use cookies"
     url = "/cookies"
-    weight = 90
+    weight = 100
  [[menu.footer]]
     name = "Privacy Statement"
     url = "/privacy"
     weight = 80
+ [[menu.footer]]
+    name = "Stats"
+    url = "/stats"
+    weight = 90

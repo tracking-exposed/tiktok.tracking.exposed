@@ -1,5 +1,5 @@
 ---
-title: What we produced
+title: What we do
 subtitle: — Investigating the influential algorithm —
 date: 2022-01-22
 extraCSS: "/css/informative.css"
@@ -15,19 +15,35 @@ og_description: "We build free-software to investigate TikTok's algorithm and an
 <div class="row justify-content-md-center">
 <div class="col-md-8">
 
-### We produced since our lunch in January 2022
+### We wanna hold the platform accountable by:
+- Building free-software research tools
+- Empowering regulators with technical reports
+- Raising public awareness
 
-1. The results of the most common TikTok queries from our community [queries](/queries).
-2. Our [Privacy](/privacy) Statement: did you read why **Data Donation** matters?
-3. The TikTok algorithm [Commentary](/commentary) on TikTok!
-4. An overview of our technical capabilities [services](/services).
-5. Open adoption [stats](/stats).
+### Research & Knowledge Sharing
 
-### And these research outputs
+Since the beginning of 2022 we have released:
+- A [shadow-banning investigation](/ws22-shadowban-research) in January
+- Our [initial results on political shadow-banning](https://docs.google.com/presentation/d/e/2PACX-1vSaNiJRE9u4IDRtIg-0WPrPfAVc_18Rfrm_QZu3tERQkrGBycVLkduj9E-35SOrZXWHnybLObJSqgU1/pub?start=false&loop=false&delayms=3000)
+- Results for most common TikTok queries from our community [queries](/queries)
+- The TikTok algorithm [commentary](/commentary)
 
-* A [Shadow-banning investigation](/ws22-shadowban-research) January 2022
-* A [workshop](/slides/mozfest/) on how to use the TikTok Tracking Exposed for research at the Mozilla festival
-* A deck of our [initial results on political shadow-banning](https://docs.google.com/presentation/d/e/2PACX-1vSaNiJRE9u4IDRtIg-0WPrPfAVc_18Rfrm_QZu3tERQkrGBycVLkduj9E-35SOrZXWHnybLObJSqgU1/pub?start=false&loop=false&delayms=3000)
+And held a [workshop](/slides/mozfest/) at Mozfest 
+
+
+### We offer services in four areas:
+
+1. **Academia**, we help design novel research projects to understand the impact of personalization algorithms. This might include 3 to 5 days workshop, or a longer research plan.
+
+2. **Strategic litigation**, by combining the strength of GDPR and the innovative aspect of algorithm analysis, we can highlight if, when and how a platform is abusing personal data. TikTok offers many opportunities for investigation in the framework of the European Data Regulation directives.
+
+3. **Media organizations**, we can help design your coverage of the digital aspects of political campaigns, develop tools and visualizations and provide timely expert analysis. 
+
+4. **Business and innovators**, we advise on the design of personalization algorithms: impact assessment, implementation and monitoring.
+
+### In offering these services we bring our own experience and expertise, as well as a network of experts and practitioners.
+
+If you are interested in working with us, please [get in touch](/about) with a brief outline of your project.
 
 </div>
 </div>
