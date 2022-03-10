@@ -25,10 +25,14 @@ a:hover.extension-button {
 }
 
 .tiktok {
+    background-color: #fff;
     /* remind self: produced with https://glitchart.io/ */
     /* background-image: url("/images/glitch-art-bg-2.jpg"); */
 }
 
+.green{
+    color: #69c9d0;
+}
 .core {
     background-color: white;
     border-radius: 0 0 20px 20px;
