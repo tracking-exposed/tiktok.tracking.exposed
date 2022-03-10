@@ -5,6 +5,8 @@ date: 2022-01-22
 extraCSS: "/css/informative.css"
 draft: false
 ---
+<div class="row justify-content-md-center">
+    <div class="col-md-8">
 
 ### Three smart tricks on shadowban
 
@@ -86,3 +88,6 @@ draft: false
 
 <!-- this is necessary at the end of any file with tkembed -->
 <script async src="https://www.tiktok.com/embed.js"></script>
+
+</div>
+</div>
