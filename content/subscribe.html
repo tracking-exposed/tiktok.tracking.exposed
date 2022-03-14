@@ -1,0 +1,58 @@
+---
+title: SUBSCRIBE
+subtitle: TikTok Algortihm Observatory
+date: 2021-11-22T15:01:21+01:00
+draft: false
+extraCSS: "/css/tiktok.css"
+---
+
+
+<div class="cta-container">
+<div class="justify-content-md-center mt-5">
+  <h2 class="cta">
+    Be the first to know about our next campaign
+  </h2>
+
+  <div class="row justify-content-md-center vertical-align">
+    <div class="col-md-2 col-sm-12 mt-5">
+      <input id="email--address" type="email" name="email" class="email-box__input" placeholder="email@domain" />
+    </div>
+    <div class="col-md-2"></div>
+    <div class="col-md-1 col-sm-6 mt-5">
+        <button id="mail--button" class="btn btn-primary">Add me!</button>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="/js/global.js"></script>
+<script type="text/javascript">
+
+  $("#mail--button").click(function(evnt) {
+    evnt.preventDefault();
+    $("#mail--button").text("...");
+
+    fetch(buildApiUrl("registerEmail2"), {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        'email': $('#email--address').val(),
+        'reason': 'subscribe-to-ukraine',
+      })
+    })
+    .then(function(result) {
+      console.log(result.status);
+      if(result.status === 403)
+        $("#mail--button").text("⛔");
+      else if(result.status === 200)
+        $("#mail--button").text("👍");
+      else if(result.status === 201)
+        $("#mail--button").text("🙋");
+      else
+        $("#mail--button").text("<error>");
+    });
+  });
+
+</script>
