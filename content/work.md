@@ -25,10 +25,9 @@ og_description: "We build free-software to investigate TikTok's algorithm and an
 Since the beginning of 2022 we have released:
 - A [shadow-banning investigation](/ws22-shadowban-research) in January
 - Our [initial results on political shadow-banning](https://docs.google.com/presentation/d/e/2PACX-1vSaNiJRE9u4IDRtIg-0WPrPfAVc_18Rfrm_QZu3tERQkrGBycVLkduj9E-35SOrZXWHnybLObJSqgU1/pub?start=false&loop=false&delayms=3000)
-- Results for most common TikTok queries from our community [queries](/queries)
-- The TikTok algorithm [commentary](/commentary)
-
-And held a [workshop](/slides/mozfest/) at Mozfest 
+- All our code is [free software](/software)
+- And if you're on videos, this is the TikTok algorithm [commentary](/commentary)
+- We held also this [workshop](/slides/mozfest/) at Mozfest 2022
 
 
 ### We offer services in four areas:
@@ -47,8 +46,3 @@ If you are interested in working with us, please [get in touch](/about) with a b
 
 </div>
 </div>
-
-
-
-
-

@@ -10,8 +10,9 @@ og_image: "https://tiktok.tracking.exposed/images/mozilla-tiktok.png"
 og_url: "https://tiktok.tracking.exposed/about/"
 og_description: "We build free-software to investigate TikTok's algorithm and analyze its impact on our society."
 ---
+
 <div class="row justify-content-md-center">
-    <div class="col-md-8">
+<div class="col-md-8">
 
 ### TikTok Observatory is part of Tracking.Exposed
 
@@ -19,7 +20,10 @@ og_description: "We build free-software to investigate TikTok's algorithm and an
 
 ### Algorithmic Accountability since 2016
 
-[Our pioneering research](https://tracking.exposed/publications/) on [YouTube](https://youtube.tracking.exposed), [Amazon](https://amazon.tracking.exposed), [Facebook](https://facebook.tracking.exposed) and [PornHub](https://pornhub.tracking.exposed) has been featured in [the New York Times](https://www.nytimes.com/interactive/2020/03/02/technology/youtube-conspiracy-theory.html), [the Guardian](https://www.theguardian.com/technology/2022/mar/10/tiktok-users-in-russia-can-see-only-old-russian-made-content?CMP=Share_iOSApp_Other), [Le Monde](https://www.lemonde.fr/pixels/article/2020/03/06/videos-complotistes-youtube-a-la-capacite-de-moderer-son-contenu-lorsqu-il-en-a-la-volonte-politique_6032050_4408996.html), in [United Nation](https://undocs.org/pdf?symbol=en/A/73/348) reports and [a letter](https://malinowski.house.gov/sites/malinowski.house.gov/files/Letter%20to%20YouTube%20--%20Malinowski_Eshoo_final_0.pdf) from the US Congress to YouTube. Our funders include European Commission, Mozilla and Reset.Tech.
+* Meet the [Tracking Exposed team](https://tracking.exposed/about), and
+* Our [Released material](https://tracking.exposed/impact)
+
+This TikTok focused project is sponsored by [Mozilla Technology Fund](https://foundation.mozilla.org/en/blog/a-new-way-to-keep-tiktok-accountable).
 
 ### Big Tech spies on you, <br> together we can spy on them
 
