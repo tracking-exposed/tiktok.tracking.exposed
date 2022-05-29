@@ -4,7 +4,7 @@ subtitle: Do not share this link! Only you have access to it.
 date: 2021-09-10T05:01:21+01:00
 draft: false
 extraCSS: "/css/personal.css"
-type: app 
+type: app
 ---
 
 <div class="row" id="personal">
@@ -29,9 +29,9 @@ type: app
 
 <div class="row">
   <div class="col-3">
-  Download CSV format
+  Download
   <hr/>
-  <h3>
+  <h4>
     <button id="foryou--csv" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" title="Download CSV">
     <span class="MuiIconButton-label">
         <svg class="MuiSvgIcon-root MuiSvgIcon-colorError" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
@@ -43,11 +43,11 @@ type: app
     <span class="MuiTouchRipple-root"></span>
     </button>
     <span class="feed--name">
-        For You
+        For You (CSV)
     </span>
-  </h3>
+  </h4>
 
-  <h3>
+  <h4>
     <button id="following--csv" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" title="Download CSV">
     <span class="MuiIconButton-label">
         <svg class="MuiSvgIcon-root MuiSvgIcon-colorError" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
@@ -57,13 +57,13 @@ type: app
         </svg>
     </span>
     <span class="MuiTouchRipple-root"></span>
-    </button> 
+    </button>
     <span class="feed--name">
-        Following
+        Following (CSV)
     </span>
-  </h3>
+  </h4>
 
-  <h3>
+  <h4>
     <button id="search--csv" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" title="Download CSV">
     <span class="MuiIconButton-label">
         <svg class="MuiSvgIcon-root MuiSvgIcon-colorError" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
@@ -73,11 +73,27 @@ type: app
         </svg>
     </span>
     <span class="MuiTouchRipple-root"></span>
-    </button> 
+    </button>
     <span class="feed--name">
-        Searches
+        Searches (CSV)
     </span>
-  </h3>
+  </h4>
+
+  <h4>
+    <button id="profile--csv" class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeSmall" tabindex="0" type="button" title="Download CSV">
+    <span class="MuiIconButton-label">
+        <svg class="MuiSvgIcon-root MuiSvgIcon-colorError" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+        <path
+            d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3zm-5.55-8h-2.9v3H8l4 4 4-4h-2.55z"
+        ></path>
+        </svg>
+    </span>
+    <span class="MuiTouchRipple-root"></span>
+    </button>
+    <span class="feed--name">
+        Profiles (CSV)
+    </span>
+  </h4>
 
   </div>
 
@@ -139,6 +155,7 @@ type: app
   if(t.length !== 44 ) {
     console.log("Wrong token length in the URL", t.length);
     $("#counters").hide();
+    // TODO test this condition and see how it looks like
     $("h3").text("Missing key in the URL; The browser extension generates automatically an access key the first time you access to tiktok.com from this browser.");
   }
   else {
@@ -147,6 +164,10 @@ type: app
 
     $("#foryou--csv").on('click', function() {
         const csvurl = buildApiUrl('personal', t + '/foryou/csv', 2);
+        window.location = csvurl;
+    });
+    $("#profile--csv").on('click', function() {
+        const csvurl = buildApiUrl('personal', t + '/profile/csv', 2);
         window.location = csvurl;
     });
     $("#following--csv").on('click', function() {
