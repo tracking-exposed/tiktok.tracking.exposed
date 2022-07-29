@@ -27,7 +27,7 @@ type: app
 
 <hr />
 
-<div class="row">
+<div class="row" id="csvs">
   <div class="col-3">
   <h4>CSV download</h4>
   <hr/>
@@ -109,7 +109,7 @@ type: app
 </div>
 
 <hr/>
-<h3>Recorded Searches, click on query to compare</h3>
+<h4>Recorded Searches, click on query to compare</h4>
 <div id="searches--list" class="taboule-container">
     <span>Taboule here</span>
 </div>
@@ -137,6 +137,10 @@ type: app
     try {
         const data = await response.json();
         console.log(data);
+
+        if(data.error)
+            throw new Error(data.message);
+
         /* creationTime: "2022-03-07T08:45:12.512Z"
            lastActivity: "2022-03-07T08:45:12.512Z"
            p: "okra-cucumber-bun"
@@ -145,59 +149,59 @@ type: app
         $("#pseudonym").text(data.supporter.p);
         $("#created--at").text(data.supporter.creationTime);
         $("#total--metadata").text(data.counters.metadata);
+
+        const baseURL = (window.location.origin.match(/localhost/)) ?
+            'http://localhost:14000/api' : "/api";
+
+        console.log("Loading Taboule with URL", baseURL);
+        window.Taboule({
+            showInput: false,
+            node: document.getElementById('searches--list'),
+            baseURL,
+            query: "tikTokPersonalSearch",
+            pageSize: 25,
+            initialParams: {
+                publicKey: personalKey,
+            },
+        });
+
     } catch(error) {
         console.log(error);
+        const message = `<h3>${error.message}</h3>`;
+        $("#personal").html(message);
+        $("#csvs").hide();
+        $("#searches--list").hide();
+        $("h4").html("Please read the documentation at <a href='https://docs.tracking.exposed'>docs.tracking.exposed</a>");
     }
   }
 
   const t = window.location.href.split('/#').pop();
-  if(t.length !== 44 ) {
-    console.log("Wrong token length in the URL", t.length);
-    $("#counters").hide();
-    // TODO test this condition and see how it looks like
-    $("h3").text("Missing key in the URL; The browser extension generates automatically an access key the first time you access to tiktok.com from this browser.");
-  }
-  else {
+  
 
-    fillUpPersonal(t);
+  fillUpPersonal(t);
+    
+  $("#foryou--csv").on('click', function() {
+    const csvurl = buildApiUrl('personal', t + '/foryou/csv', 2);
+    window.location = csvurl;
+  });
+  $("#profile--csv").on('click', function() {
+    const csvurl = buildApiUrl('personal', t + '/profile/csv', 2);
+    window.location = csvurl;
+  });
+  $("#following--csv").on('click', function() {
+    const csvurl = buildApiUrl('personal', t + '/following/csv', 2);
+    window.location = csvurl;
+  });
+  $("#search--csv").on('click', function() {
+    const csvurl = buildApiUrl('personal', t + '/search/csv', 2);
+    window.location = csvurl;
+  });
 
-    $("#foryou--csv").on('click', function() {
-        const csvurl = buildApiUrl('personal', t + '/foryou/csv', 2);
-        window.location = csvurl;
-    });
-    $("#profile--csv").on('click', function() {
-        const csvurl = buildApiUrl('personal', t + '/profile/csv', 2);
-        window.location = csvurl;
-    });
-    $("#following--csv").on('click', function() {
-        const csvurl = buildApiUrl('personal', t + '/following/csv', 2);
-        window.location = csvurl;
-    });
-    $("#search--csv").on('click', function() {
-        const csvurl = buildApiUrl('personal', t + '/search/csv', 2);
-        window.location = csvurl;
-    });
-
-    $("#following--json").text(
-        buildApiUrl('personal', t + '/following/json', 2)
-    );
-    $("#foryou--json").text(
-        buildApiUrl('personal', t + '/foryou/json', 2)
-    );
-
-    const baseURL = (window.location.origin.match(/localhost/)) ?
-        'http://localhost:14000/api' : "/api";
-
-    console.log("Loading Taboule with URL", baseURL);
-    window.Taboule({
-        showInput: false,
-        node: document.getElementById('searches--list'),
-        baseURL,
-        query: "tikTokPersonalSearch",
-        pageSize: 25,
-        initialParams: {
-            publicKey: t,
-        },
-    });
-  }
+  $("#following--json").text(
+    buildApiUrl('personal', t + '/following/json', 2)
+  );
+  $("#foryou--json").text(
+    buildApiUrl('personal', t + '/foryou/json', 2)
+  );
+  
 </script>
