@@ -27,7 +27,6 @@ a:hover.extension-button {
     /* background-image: url("/images/glitch-art-bg-2.jpg"); */
 }
 
-
 .core {
     background-color: white;
     border-radius: 0 0 20px 20px;
@@ -42,7 +41,7 @@ p {
  */
 
 .sider {
-    font-size: 1.8em; 
+    font-size: 1.8em;
 }
 
 .sider a {
@@ -121,3 +120,9 @@ h1 {
     align-items: center;
 }
 
+/* trimming when the third report have been published */
+
+.report {
+  padding: 1.1em;
+  font-size: 1.7em;
+}
