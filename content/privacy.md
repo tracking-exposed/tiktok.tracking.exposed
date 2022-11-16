@@ -10,7 +10,7 @@ extraCSS: "/css/informative.css"
 
 ### Last update — 22 January 2022
 
-{{<tk-extension version="0.2.7">}}
+{{<tk-extension version="2.7.1">}}
 
 _By installing the browser extension and enabling the opt-in, you are accepting the "Data Donation Agreement," hereby drafted:_
 
