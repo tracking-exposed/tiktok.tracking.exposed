@@ -2,6 +2,5 @@ public
 .idea
 .sass-cache
 resources
-themes
 .hugo_build.lock
 .infrastructure/*
