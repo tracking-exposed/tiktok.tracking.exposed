@@ -9,4 +9,4 @@ pipeline:
       - /var/www/sites/tiktok.tracking.exposed:/site
 
 branches: 
-  - master
+  - main
