@@ -21,7 +21,7 @@ Europe 2023, with the DSA starting to be enforced and the AI Act on its final st
 15 March 2022, report n.1 published: [**TikTok blocks 95% of content for users in Russia**](https://tracking.exposed/press/releases/tiktok-blocks-95-of-content-for-users-in-russia/). [20 pages .pdf](https://tracking.exposed/pdf/tiktok-russia-15march2022.pdf)
 
 
-These report gots major coverage in the news media, also because we were among the first to capture the intersection between Silicon Valley - Chinese differences of behaviour toward the Russia-Ukraine conflict. The report n.2 was also exensively quoted in the US congress as evidence.
+These report gots major coverage in the news media, also because we were among the first to capture the intersection between Silicon Valley - Chinese differences of behaviour toward the Russia-Ukraine conflict. [A report was also exensively quoted in the US congress as evidence, to question TikTok CEO](https://www.lankford.senate.gov/news/press-releases/lankford-daines-slam-tiktok-ceo-for-enabling-spread-of-pro-war-propaganda-to-russian-public/).
 
 January 2022, [**preliminary research on TikTok geoblocking and content banning techniques**](/slides/ws22-results/), made as part of the University of Amsterdam winter school.
 
