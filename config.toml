@@ -6,12 +6,12 @@ enableRobotsTXT = true
 canonifyURLs = true
 
 [params]
-   ourvision = "not-display"
-   subtitle = "TikTok"
+#   ourvision = "not-display"
+   subtitle = "TikTok Tracking Exposed"
    subsite = "tiktok"
-   openGraphSiteName = "TikTok Observatory"
+   openGraphSiteName = "TikTok Tracking Exposed"
    description = "This is a collaborative project meant to let you take back control of your data. This approach do not follow corporate methods, but as an algorithm investigator let you passively records what Youtube algorithm pick for you, and let you play with the data."
-   tagline = "TikTok Observatory: investigating censorship and algorithmic demotion"
+   tagline = "This tool to study TikTok's personalization algorithm is now DISCONTINUED."
 
 [markup]
   [markup.goldmark]

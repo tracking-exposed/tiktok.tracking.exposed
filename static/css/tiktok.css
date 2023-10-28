@@ -1,128 +1,18 @@
-.extension-button {
-    padding: 0.5em 1em 0.5em 1em;
-    font-size: 18px;
-    background-image: none;
-    background-color: #ee1d52;
-    color: white;
-    border-radius: 4px;
-    font-weight: 900;
-    border: none;
-}
-
-a:hover.extension-button {
-    text-decoration: none;
-    background-color: rgb(238 29 82 / 15%);
-}
-
-.extension-button img {
-    height: 25px;
-    margin-top: -5px;
-    margin-left: 5px;
-    transition: all 0.2s;
-}
-
 .tiktok {
     background-color: #fff;
     /* remind self: produced with https://glitchart.io/ */
     /* background-image: url("/images/glitch-art-bg-2.jpg"); */
 }
 
+.jumbotron-home {
+    clear:both;
+    min-height: unset !important;
+}
+
 .core {
-    background-color: white;
-    border-radius: 0 0 20px 20px;
+    padding-top: 9em;
 }
 
 p {
     font-size: 1.4em;
-}
-
-/* above the css styles used for the old homepage, which now is projects, below
- * the stiles used for homecta
- */
-
-.sider {
-    font-size: 1.8em;
-}
-
-.sider a {
-    color: white !important;
-}
-
-small {
-    font-size: 0.8em;
-}
-
-.cta-container {
-    background-color: white;
-    padding: 5em;
-    border: 1em;
-    border-radius: 20px;
-    text-align: center;
-}
-
-.cta-container input {
-    max-width: 800px;
-    border-radius: 0px;
-    border: solid;
-    border-width: 3px;
-    padding: 10px 10px 10px 10px;
-}
-
-.fba {
-    color: #ee1d52;
-    font-size: 1.4em;
-    font-weight: 900;
-}
-
-#mail--button {
-    padding: 0.5em 1em 0.5em 1em;
-    font-size: 18px;
-    background-image: none;
-    background-color: #ee1d52;
-    color: white;
-    border-radius: 4px;
-    font-weight: 900;
-    border: none;
-}
-
-#mail--button:hover {
-    padding: 0.5em 1em 0.5em 1em;
-    font-size: 18px;
-    background-color: #69c9d0;
-    color: white;
-    border: none !important;
-    border-radius: 4px;
-    font-weight: 900;
-}
-
-.cta {
-    font-size: 6em;
-}
-
-.cta-container p {
-    font-size: 2.3em;
-}
-
-h1 {
-    font-size: 5em;
-}
-
-.logo-show {
-    color: black;
-    background-color: white;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 1em;
-}
-
-.vertical-align {
-    display: flex;
-    align-items: center;
-}
-
-/* trimming when the third report have been published */
-
-.report {
-  padding: 1.1em;
-  font-size: 1.7em;
 }
